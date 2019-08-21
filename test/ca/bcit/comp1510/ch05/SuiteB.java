@@ -1,8 +1,8 @@
 package ca.bcit.comp1510.ch05;
 
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.platform.suite.api.SelectClasses;
 import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
-import org.junit.runners.Suite.SuiteClasses;
 
 /**
  * A demonstration of a test-suite.
@@ -10,6 +10,6 @@ import org.junit.runners.Suite.SuiteClasses;
  * @author blink
  * @version 1
  */
-@RunWith(value = Suite.class)
-@SuiteClasses(value = { CaseB.class })
+@RunWith(JUnitPlatform.class)
+@SelectClasses(CaseBTest.class)
 public class SuiteB { }

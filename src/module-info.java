@@ -1,8 +1,11 @@
-module ca.bcit.comp1510.examplea {
+module ca.bcit.comp1510.examples {
 	requires javafx.controls;
 	requires javafx.fxml;
 	requires javafx.media;
 	requires transitive javafx.graphics;
+	requires org.junit.jupiter.api;
+	requires org.junit.platform.runner;
+	
 	opens ca.bcit.comp1510.ch03 to javafx.fxml;
 	exports ca.bcit.comp1510.ch03;
 	opens ca.bcit.comp1510.ch04 to javafx.fxml;

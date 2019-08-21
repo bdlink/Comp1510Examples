@@ -1,8 +1,8 @@
 package ca.bcit.comp1510.ch05;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * A dummy test-case to demonstrate how to use a test-suite.
@@ -10,13 +10,13 @@ import org.junit.Test;
  * @author blink
  * @version 1
  */
-public class CaseB {
+public class CaseBTest {
     /** 
      * Dummy test.
      */
     @Test
     public void testB1() {
-        assertTrue("PlaceHolderB1", true);
+        assertTrue(true, "PlaceHolderB1");
     }
     
     /** 
@@ -24,6 +24,6 @@ public class CaseB {
      */
     @Test
     public void testB2() {
-        assertTrue("PlaceHolderB2", true);
+        assertTrue(true, "PlaceHolderB2");
     }
 }

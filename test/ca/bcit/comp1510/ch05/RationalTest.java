@@ -1,11 +1,11 @@
 package ca.bcit.comp1510.ch05;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 /**
  * Simple test of Rational class.
@@ -20,7 +20,7 @@ public class RationalTest {
     private Rational r2;
     
     /** initialize r1, r2 for all tests. */
-    @Before
+    @BeforeEach
     public void setUp() {
         final int num1 = 6;
         final int den1 = 8;
@@ -52,16 +52,16 @@ public class RationalTest {
         final int numOut = 3;
         final int denOut = 2;
         Rational r = new Rational(num, den);
-        assertEquals("Numerator wrong", numOut, r.getNumerator());
-        assertEquals("Denominator wrong", denOut, r.getDenominator());
+        assertEquals(numOut, r.getNumerator(), "Numerator wrong");
+        assertEquals(denOut, r.getDenominator(), "Denominator wrong");
     }
     
     /** Test isLike. */
     @Test
     public void testSame() {
         final Rational reduced = new Rational(3, 4);
-        assertFalse("Falsely equal", r1.isLike(r2));
-        assertTrue("Falsly different", r1.isLike(reduced));
+        assertFalse(r1.isLike(r2), "Falsely equal");
+        assertTrue(r1.isLike(reduced), "Falsly different");
     }
 
     /** Test reciprocal. */
@@ -70,8 +70,8 @@ public class RationalTest {
         final Rational recipR1 = new Rational(4, 3);
         final Rational recipR2 = new Rational(3, 1);
 
-        assertTrue("Wrong reciprocal", r1.reciprocal().isLike(recipR1));
-        assertTrue("Wrong reciprocal", r2.reciprocal().isLike(recipR2));
+        assertTrue(r1.reciprocal().isLike(recipR1), "Wrong reciprocal");
+        assertTrue(r2.reciprocal().isLike(recipR2), "Wrong reciprocal");
     }
 
     /** Test add. */
