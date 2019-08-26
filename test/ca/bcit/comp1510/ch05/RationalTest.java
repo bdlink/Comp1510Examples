@@ -120,10 +120,10 @@ public class RationalTest {
         final Rational test3 = new Rational(46, 2);
         final Rational test4 = new Rational(5, 7);
         
-        assertEquals("should be 0", "0", test1.toString());
-        assertEquals("should be 0", "23", test2.toString());
-        assertEquals("should be 0", "23", test3.toString());
-        assertEquals("should be 0", "5/7", test4.toString());
+        assertEquals("0", test1.toString(), "should be 0");
+        assertEquals("23", test2.toString(), "should be 23");
+        assertEquals("23", test3.toString(), "should be 23");
+        assertEquals("5/7", test4.toString(), "should be 5/7");
     }
 
 }
