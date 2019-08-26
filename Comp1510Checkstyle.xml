@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+<!DOCTYPE module PUBLIC "-//Checkstyle//DTD Check Configuration 1.3//EN" "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
 <!--
     This configuration file was written by the eclipse-cs plugin configuration editor
 -->
 <!--
-    Checkstyle-Configuration: COMP 1510 Checkstyle
+    Checkstyle-Configuration: Comp 1510 Checkstyle
     Description: none
 -->
 <module name="Checker">
@@ -42,7 +42,6 @@
     <module name="ParameterNumber"/>
     <module name="LineLength">
       <property name="ignorePattern" value="^import"/>
-      <property name="tabWidth" value="4"/>
     </module>
     <module name="EmptyForIteratorPad"/>
     <module name="MethodParamPad"/>
@@ -50,9 +49,7 @@
     <module name="NoWhitespaceBefore"/>
     <module name="OperatorWrap"/>
     <module name="ParenPad"/>
-    <module name="TypecastParenPad">
-      <property name="tokens" value="RPAREN,TYPECAST"/>
-    </module>
+    <module name="TypecastParenPad"/>
     <module name="WhitespaceAfter"/>
     <module name="WhitespaceAround"/>
     <module name="ModifierOrder"/>
@@ -114,6 +111,11 @@
     <module name="DefaultComesLast"/>
     <module name="FallThrough"/>
     <module name="MultipleVariableDeclarations"/>
+    <module name="LocalFinalVariableName"/>
+    <module name="ConstantName"/>
+  </module>
+  <module name="BeforeExecutionExclusionFileFilter">
+    <property name="fileNamePattern" value="module\-info\.java$"/>
   </module>
   <module name="JavadocPackage">
     <property name="severity" value="ignore"/>
