@@ -10,7 +10,7 @@ package ca.bcit.comp1510.ch08;
 public class Primes {
     /** First several prime numbers. */
     private static final int[] PRIMES =
-        {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
+        {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31};
 
     /**
      * Stores some prime numbers in an array and prints them.

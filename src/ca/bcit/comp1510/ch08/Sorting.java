@@ -11,8 +11,6 @@ public class Sorting {
     /**
      * Sorts the specified array of objects using the selection sort algorithm.
      * 
-     * @param <T>
-     *            Type placeholder for comparable type
      * @param list
      *            Array to be sorted
      */
@@ -38,8 +36,6 @@ public class Sorting {
     /**
      * Sorts the specified array of objects using the insertion sort algorithm.
      * 
-     * @param <T>
-     *            Type placeholder for comparable type
      * @param list
      *            Array to be sorted
      */

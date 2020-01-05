@@ -34,6 +34,8 @@ public class TwoDArray {
             }
         }
         
+        final int[] newRow = {3, 4, 5};
+        table[2] = newRow;
 
         // Prints the table
         for (int row = 0; row < table.length; row++) {
