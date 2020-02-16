@@ -15,8 +15,6 @@
   </module>
   <module name="TreeWalker">
     <module name="JavadocMethod">
-      <property name="allowUndeclaredRTE" value="true"/>
-      <property name="suppressLoadErrors" value="true"/>
     </module>
     <module name="JavadocType">
       <property name="authorFormat" value="\S"/>
