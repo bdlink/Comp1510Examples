@@ -7,7 +7,7 @@ package ca.bcit.comp1510.ch08;
  * @author BCIT
  * @version 2017
  */
-public class Contact {
+public class Contact implements Comparable<Contact> {
     /**
      * The Contact's first name.
      */
@@ -75,6 +75,7 @@ public class Contact {
         return (other instanceof Contact
                 && lastName.equals(((Contact) other).getLastName())
                 && firstName.equals(((Contact) other).getFirstName()));
+        //return compareTo((Contact) other) == 0
     }
     
     /**

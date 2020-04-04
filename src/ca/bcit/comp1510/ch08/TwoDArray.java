@@ -33,6 +33,15 @@ public class TwoDArray {
                 table[row][col] = row * MULTIPLIER + col;
             }
         }
+        // Prints the table
+        for (int row = 0; row < table.length; row++) {
+            for (int col = 0; col < table[row].length; col++) {
+                System.out.print(table[row][col] + "\t");
+            }
+            System.out.println();
+        }
+        
+        System.out.println();
         
         final int[] newRow = {3, 4, 5};
         table[2] = newRow;

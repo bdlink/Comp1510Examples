@@ -45,6 +45,14 @@ public class DVD {
         this.cost = cost;
         this.bluRay = bluRay;
     }
+    
+    /**
+     *  return cost of DVD.
+     * @return cost how much the DVD cost
+     */
+    public double getCost() {
+        return cost;
+    }
 
     /**
      * Returns a description of this DVD as a String.

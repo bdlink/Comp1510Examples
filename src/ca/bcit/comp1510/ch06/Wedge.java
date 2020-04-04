@@ -15,7 +15,7 @@ public class Wedge {
      *            Unused
      */
     public static void main(String[] args) {
-        final int maxRows = 11;
+        final int maxRows = 10;
 
         for (int row = 1; row <= maxRows; row++) {
             for (int blanks = 1; blanks <= maxRows - row; blanks++) {

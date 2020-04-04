@@ -1,6 +1,6 @@
 package ca.bcit.comp1510.ch07;
 /**
- * Complex number type.
+ * Immutable Complex number type.
  * @author blink
  * @version 1.0
  */
@@ -14,9 +14,9 @@ public class Complex {
     public static final Complex ONE = new Complex(1, 0);
     
     /** Real part of number. */
-    private double re;
+    public final double re;
     /** Imaginary part of number. */
-    private double im;
+    public final double im;
     
     /**
      * Constructs a Complex object.
@@ -27,37 +27,17 @@ public class Complex {
         re = real;
         im = imag;
     }
-
-    /**
-     * Returns (accesses) the real part of the number.
-     * @return the re
+    
+    /** 
+     * Factory method for complex number in polar form.
+     * @param radius magnitude of number
+     * @param angle argument of number
+     * @return corresponding Complex number
      */
-    public double getRe() {
-        return re;
-    }
-
-    /**
-     * Sets (mutates) the real part of the number.
-     * @param re the re to set
-     */
-    public void setRe(double re) {
-        this.re = re;
-    }
-
-    /**
-     * Returns (accesses) the imaginary part of the number.
-     * @return the im
-     */
-    public double getIm() {
-        return im;
-    }
-
-    /**
-     * Sets (mutates) the imaginary part of the number.
-     * @param im the im to set
-     */
-    public void setIm(double im) {
-        this.im = im;
+    public static Complex polarComplex(double radius, double angle) {
+        
+        return new Complex(radius * Math.cos(angle), 
+                radius * Math.sin(angle));
     }
     
     /**
@@ -91,7 +71,16 @@ public class Complex {
      * @return sum of this + op2
      */
     public Complex add(Complex op2) {
-        return new Complex(re + op2.getRe(), im + op2.getIm());
+        return new Complex(re + op2.re, im + op2.im);
+    }
+    
+    /**
+     * real add.
+     * @param op2 real value to add
+     * @return result
+     */
+    public Complex add(double op2) {
+        return new Complex(re + op2, im);
     }
     
     /**
@@ -100,7 +89,16 @@ public class Complex {
      * @return difference of this - op2
      */
     public Complex subtract(Complex op2) {
-        return new Complex(re - op2.getRe(), im - op2.getIm());
+        return new Complex(re - op2.re, im - op2.im);
+    }
+    
+    /**
+     * real subtract.
+     * @param op2 real value to subtract
+     * @return result
+     */
+    public Complex subtract(double op2) {
+        return new Complex(re - op2, im);
     }
     
     /**
@@ -109,9 +107,18 @@ public class Complex {
      * @return product of this * op2
      */
     public Complex multiply(Complex op2) {
-        double realPart = re * op2.getRe() - im * op2.getIm();
-        double imagPart = re * op2.getIm() + im * op2.getRe();
+        double realPart = re * op2.re - im * op2.im;
+        double imagPart = re * op2.im + im * op2.re;
         return new Complex(realPart, imagPart);
+    }
+    
+    /**
+     * scalar multiply.
+     * @param op2 scalar value to multiply
+     * @return result
+     */
+    public Complex multiply(double op2) {
+        return new Complex(re * op2, im * op2);
     }
     
     /**
@@ -133,12 +140,24 @@ public class Complex {
      * @return quotient of this / op2
      */
     public Complex divide(Complex op2) {
-        if (op2.getRe() == 0.0 && op2.getIm() == 0.0) {
+        if (op2.re == 0.0 && op2.im == 0.0) {
             throw new IllegalArgumentException("Tried to divide by zero");
         }
         return multiply(op2.reciprocal());
     }
 
+    /**
+     * scalar divide.
+     * @param op2 scalar value to divide
+     * @return result
+     */
+    public Complex divide(double op2) {
+        if (op2 == 0.0) {
+            throw new IllegalArgumentException("Tried to divide by 0.0");
+        }
+        return new Complex(re / op2, im);
+    }
+    
     /**
      * Determines if this complex number is equal to the one passed as a
      * parameter.
@@ -149,8 +168,8 @@ public class Complex {
      */
     public boolean equals(Object op2) {
         return (op2 instanceof Complex
-                && re == ((Complex) op2).getRe()
-                && im == ((Complex) op2).getIm());
+                && re == ((Complex) op2).re
+                && im == ((Complex) op2).im);
     }
 
     /**
@@ -173,13 +192,13 @@ public class Complex {
         if (im == 0.0) {
             return Double.toString(re);
         } else if (re == 0.0) {
-            return Double.toString(im) + "I";
+            return Double.toString(im) + "i";
         } else if (im > 0) {
             return Double.toString(re) + " + " 
-                      + Double.toString(im) + "I";
+                      + Double.toString(im) + "i";
         } else {
             return Double.toString(re) + " - " 
-                    + Double.toString(-im) + "I";   
+                    + Double.toString(-im) + "i";   
         }
     }
 }
