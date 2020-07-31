@@ -3,7 +3,6 @@ package ca.bcit.comp1510.ch07;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Circle;
@@ -59,7 +58,7 @@ public class DrawSpiralComplex extends Application {
         /* 
          * calculate starting point to be nth root of 2
          */
-        final double nRoot = 32.0;
+        final double nRoot = 8.0;
         
         final Complex initialPoint = 
                 Complex.polarComplex(Math.pow(2, 1.0 / nRoot), 
