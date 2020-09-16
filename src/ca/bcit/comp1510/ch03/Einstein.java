@@ -41,9 +41,13 @@ public class Einstein extends Application {
         Ellipse ellipse = new Ellipse(200, 100, 150, 50);
         ellipse.setFill(Color.PALEGREEN);
 
-        Text quote = new Text(120, 100, "Out of clutter, find " + "simplicity.\n-- Albert Einstein");
+        Text quote = new Text(120, 100, "Out of clutter, find " 
+                + "simplicity.\n-- Albert Einstein");
+        Text additional = new Text(90, 145, "What is this? \u0427\u0442\u043e "
+                + "\u044d\u0442\u043e \u0442\u0430\u043a\u043e\u0451? " 
+                + "འདི་ག་རེ་རེད།");
 
-        Group root = new Group(ellipse, rect, circle, line, quote);
+        Group root = new Group(ellipse, rect, circle, line, quote, additional);
         Scene scene = new Scene(root, 400, 200);
 
         primaryStage.setTitle("Einstein");
