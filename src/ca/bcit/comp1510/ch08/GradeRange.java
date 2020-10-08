@@ -22,11 +22,11 @@ public class GradeRange {
                                           new Grade("D", 65),
                                           new Grade("D-", 60),
                                           new Grade("F", 0)};
+    
     /**
      * Creates and then prints an array of Grade objects.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
 

@@ -11,8 +11,7 @@ public class Words2 {
     /**
      * Instantiates a derived class and invokes its inherited and local methods.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         final int numberPages = 1500;

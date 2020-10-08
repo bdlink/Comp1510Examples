@@ -23,8 +23,7 @@ public class EvenOdd extends Application {
      * or odd, then asks if the user would like to process another value. All
      * interaction is performed using dialog boxes.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         boolean doAnother = true;
@@ -35,7 +34,7 @@ public class EvenOdd extends Application {
             inputDialog.setTitle(null);
             inputDialog.setContentText("Enter an integer:");
 
-            Optional<String> numString = inputDialog.showAndWait(); // Neato!
+            Optional<String> numString = inputDialog.showAndWait();
             if (numString.isPresent()) {
                 int num = Integer.parseInt(numString.get());
 
@@ -64,8 +63,7 @@ public class EvenOdd extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command line arguments
      */
     public static void main(String[] args) {
         launch(args);

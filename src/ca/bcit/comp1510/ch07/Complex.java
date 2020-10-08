@@ -1,4 +1,5 @@
 package ca.bcit.comp1510.ch07;
+
 /**
  * Immutable Complex number type.
  * @author blink
@@ -8,13 +9,16 @@ public class Complex {
     
     /** Imaginary number I. */
     public static final Complex I = new Complex(0, 1);
+    
     /** Complex number 0. */
     public static final Complex ZERO = new Complex(0, 0);
+    
     /** Complex number 1. */
     public static final Complex ONE = new Complex(1, 0);
     
     /** Real part of number. */
     public final double re;
+    
     /** Imaginary part of number. */
     public final double im;
     
@@ -162,8 +166,7 @@ public class Complex {
      * Determines if this complex number is equal to the one passed as a
      * parameter.
      * 
-     * @param op2
-     *            The value to compare to this
+     * @param op2 The value to compare to this
      * @return true if this is equal to op2 numerically
      */
     public boolean equals(Object op2) {
@@ -183,7 +186,7 @@ public class Complex {
         return Double.hashCode(re) ^ Double.hashCode(im);
     }
     
-   /**
+    /**
      * Converts to string with special cases for real and imaginary
      * values.
      * @return String representation of the complex number

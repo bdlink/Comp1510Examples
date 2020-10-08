@@ -17,10 +17,8 @@ public class Dictionary2 extends Book2 {
      * Constructs a new Dictionary object with the specified number of pages and
      * definitions.
      * 
-     * @param numPages
-     *            an int
-     * @param numDefinitions
-     *            an int
+     * @param numPages an int
+     * @param numDefinitions an int
      */
     public Dictionary2(int numPages, int numDefinitions) {
         super(numPages);
@@ -48,8 +46,7 @@ public class Dictionary2 extends Book2 {
     /**
      * Sets (mutates) the number of definitions.
      * 
-     * @param numDefinitions
-     *            an int
+     * @param numDefinitions an int
      */
     public void setDefinitions(int numDefinitions) {
         definitions = numDefinitions;

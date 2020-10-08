@@ -16,6 +16,7 @@ import org.junit.jupiter.api.Test;
 public class RationalTest {
     /** first test value. */
     private Rational r1;
+    
     /** second test value/. */
     private Rational r2;
     
@@ -42,6 +43,7 @@ public class RationalTest {
         assertEquals(1, r.getNumerator());
         assertEquals(1, r.getDenominator());
     }
+    
     /**
      * Test creation with common divisor.
      */
@@ -77,7 +79,7 @@ public class RationalTest {
     /** Test add. */
     @Test
     public void testAdd() {
-        final Rational answer = new Rational(13, 12); //SB 13/12
+        final Rational answer = new Rational(13, 12);
 
         assertTrue(r1.add(r2).isLike(answer));
         assertTrue(r2.add(r1).isLike(answer));

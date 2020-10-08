@@ -14,8 +14,7 @@ public class RandomNumbers {
     /**
      * Generates random numbers in various ranges.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         //These are just sample numbers, so hard to have meaningful names here
@@ -45,8 +44,9 @@ public class RandomNumbers {
 
         num2 = generator.nextFloat();
         System.out.println("A random float (between 0-1): " + num2);
-
-        num2 = generator.nextFloat() * dieMax; // 0.0 to 5.999999
+        
+        // 0.0 to 5.999999
+        num2 = generator.nextFloat() * dieMax;
         num1 = (int) num2 + 1;
         System.out.println("From 1 to 6: " + num1);
     }

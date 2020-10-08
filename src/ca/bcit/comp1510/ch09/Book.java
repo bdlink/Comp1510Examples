@@ -35,8 +35,7 @@ public class Book {
     /**
      * Sets (mutates) the number of pages in the Book.
      * 
-     * @param numPages
-     *            an int
+     * @param numPages an int
      */
     public void setPages(int numPages) {
         pages = numPages;

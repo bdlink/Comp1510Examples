@@ -22,8 +22,7 @@ public class Dots extends Application {
     /** Colours used. */
     private Color[] colorList = {Color.RED, Color.CYAN,
                                  Color.MAGENTA, Color.YELLOW,
-                                 Color.LIME, Color.WHITE
-                                };
+                                 Color.LIME, Color.WHITE};
 
     /** Stores the index of the current colour. */
     private int colorIndex;
@@ -41,8 +40,7 @@ public class Dots extends Application {
      * Displays a scene on which the user can add colored dots with mouse
      * clicks.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         final int textXCoord = 20;
@@ -70,8 +68,7 @@ public class Dots extends Application {
      * colors rotate through a set list of colors. A double click clears the
      * dots and resets the counter.
      * 
-     * @param event
-     *            invokes this method
+     * @param event invokes this method
      */
     public void processMouseClick(MouseEvent event) {
         final int circleRadius = 10;
@@ -97,8 +94,7 @@ public class Dots extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

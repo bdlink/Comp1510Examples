@@ -47,8 +47,7 @@ public class JukeBox extends Application {
      * Presents an interface that allows the user to select and play a tune from
      * a drop down box.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         String[] names = {"Western Beat", "Classical Melody",
@@ -107,8 +106,7 @@ public class JukeBox extends Application {
      * When a choice box selection is made, stops the current clip (if one was
      * playing) and sets the current tune.
      * 
-     * @param event
-     *            invokes this method
+     * @param event indicates choice was made
      */
     public void processChoice(ActionEvent event) {
         current.stop();
@@ -119,8 +117,7 @@ public class JukeBox extends Application {
      * Handles the play and stop buttons. Stops the current clip in either case.
      * If the play button was pressed, (re)starts the current clip.
      * 
-     * @param event
-     *            invokes this method
+     * @param event indicates button pushed
      */
     public void processButtonPush(ActionEvent event) {
         current.stop();
@@ -133,8 +130,7 @@ public class JukeBox extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

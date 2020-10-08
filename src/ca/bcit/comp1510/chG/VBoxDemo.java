@@ -22,8 +22,7 @@ public class VBoxDemo extends Application {
     /**
      * Creates the VBox.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         RadioButton sepiaButton = new RadioButton("Sepia");
@@ -39,7 +38,7 @@ public class VBoxDemo extends Application {
         colorControls.setPadding(new Insets(20, 10, 20, 10));
         colorControls.setSpacing(10);
 
-        Scene scene = new Scene(colorControls, 600, 500);
+        final Scene scene = new Scene(colorControls, 600, 500);
 
         primaryStage.setTitle("VBox Demo");
         primaryStage.setScene(scene);
@@ -49,8 +48,7 @@ public class VBoxDemo extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

@@ -44,8 +44,7 @@ public class EllipseSliders extends Application {
      * Displays an ellipse with sliders that control the width and
      * height of the ellipse.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         ellipse = new Ellipse(ELLIPSE_CENTRE_X, ELLIPSE_CENTRE_Y,
@@ -91,8 +90,7 @@ public class EllipseSliders extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

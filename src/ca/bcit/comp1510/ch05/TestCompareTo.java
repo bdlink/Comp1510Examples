@@ -16,8 +16,7 @@ public class TestCompareTo {
      * Read lines from the input until "---END---" is entered (case sensitive).
      * Write out the smallest and largest line entered.
      *
-     * @param args
-     *            Unused
+     * @param args Unused
      */
     public static void main(String[] args) {
         String smallest = "";

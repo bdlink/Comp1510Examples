@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE module PUBLIC "-//Checkstyle//DTD Check Configuration 1.3//EN" "https://checkstyle.org/dtds/configuration_1_3.dtd">
+<!DOCTYPE module PUBLIC "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN" "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
 <!--
     This configuration file was written by the eclipse-cs plugin configuration editor
 -->
 <!--
-    Checkstyle-Configuration: Comp 1510 Checkstyle
+    Checkstyle-Configuration: Comp1510 checkstyle
     Description: none
 -->
 <module name="Checker">
   <property name="severity" value="warning"/>
-  <module name="LineLength">
-      <property name="ignorePattern" value="^import"/>
-  </module>
   <module name="TreeWalker">
-    <module name="JavadocMethod">
-    </module>
+    <module name="JavadocMethod"/>
     <module name="JavadocType">
       <property name="authorFormat" value="\S"/>
       <property name="versionFormat" value="\d"/>
@@ -57,10 +53,6 @@
     <module name="LeftCurly"/>
     <module name="NeedBraces"/>
     <module name="RightCurly"/>
-    <module name="AvoidInlineConditionals">
-      <property name="severity" value="ignore"/>
-      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
-    </module>
     <module name="EmptyStatement"/>
     <module name="EqualsHashCode"/>
     <module name="HiddenField">
@@ -71,28 +63,12 @@
     <module name="InnerAssignment"/>
     <module name="MagicNumber"/>
     <module name="MissingSwitchDefault"/>
-    <module name="RedundantThrows">
-      <property name="severity" value="ignore"/>
-      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
-    </module>
     <module name="SimplifyBooleanExpression"/>
     <module name="SimplifyBooleanReturn"/>
-    <module name="DesignForExtension">
-      <property name="severity" value="ignore"/>
-      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
-    </module>
     <module name="FinalClass"/>
-    <module name="HideUtilityClassConstructor">
-      <property name="severity" value="ignore"/>
-      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
-    </module>
     <module name="InterfaceIsType"/>
     <module name="VisibilityModifier"/>
     <module name="ArrayTypeStyle"/>
-    <module name="FinalParameters">
-      <property name="severity" value="ignore"/>
-      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
-    </module>
     <module name="TodoComment"/>
     <module name="UpperEll"/>
     <module name="ExecutableStatementCount">
@@ -111,22 +87,44 @@
     <module name="MultipleVariableDeclarations"/>
     <module name="LocalFinalVariableName"/>
     <module name="ConstantName"/>
-  </module>
-  <module name="BeforeExecutionExclusionFileFilter">
-    <property name="fileNamePattern" value="module\-info\.java$"/>
-  </module>
-  <module name="JavadocPackage">
-    <property name="severity" value="ignore"/>
-    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
-  </module>
-  <module name="NewlineAtEndOfFile"/>
-  <module name="Translation"/>
-  <module name="FileLength"/>
-  <module name="FileTabCharacter"/>
+    <module name="MissingJavadocMethod"/>
+    <module name="MissingJavadocType"/>
+    <module name="InvalidJavadocPosition"/>
+    <module name="AtclauseOrder"/>
+    <module name="SingleLineJavadoc"/>
+    <module name="JavadocTagContinuationIndentation"/>
+    <module name="NonEmptyAtclauseDescription">
+      <property name="javadocTokens" value="PARAM_LITERAL,RETURN_LITERAL,THROWS_LITERAL,EXCEPTION_LITERAL,DEPRECATED_LITERAL"/>
+    </module>
+    <module name="JavadocMissingWhitespaceAfterAsterisk"/>
+    <module name="MethodTypeParameterName"/>
+    <module name="InterfaceTypeParameterName"/>
+    <module name="ClassTypeParameterName"/>
+    <module name="Indentation"/>
+    <module name="CommentsIndentation"/>
+    <module name="EmptyLineSeparator">
+      <property name="tokens" value="PACKAGE_DEF,IMPORT,STATIC_IMPORT,CLASS_DEF,ENUM_DEF,INTERFACE_DEF,CTOR_DEF,METHOD_DEF,STATIC_INIT,INSTANCE_INIT,VARIABLE_DEF"/>
+    </module>
+    <module name="SeparatorWrap"/>
+    <module name="NoEnumTrailingComma"/>
+    <module name="TrailingComment"/>
+    <module name="VisibilityModifier">
+      <property name="allowPublicFinalFields" value="true"/>
+      <property name="allowPublicImmutableFields" value="true"/>
+    </module>
   <module name="RegexpSingleline">
     <property name="severity" value="ignore"/>
     <property name="format" value="\s+$"/>
     <property name="message" value="Line has trailing spaces."/>
     <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
   </module>
+</module>
+  <module name="FileTabCharacter"/>
+  <module name="FileLength"/>
+  <module name="Translation"/>
+  <module name="NewlineAtEndOfFile"/>
+  <module name="BeforeExecutionExclusionFileFilter">
+    <property name="fileNamePattern" value="module\-info\.java$"/>
+  </module>
+
 </module>

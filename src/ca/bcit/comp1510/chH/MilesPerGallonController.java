@@ -1,7 +1,5 @@
 package ca.bcit.comp1510.chH;
 
-//import java.net.URL;
-//import java.util.ResourceBundle;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -76,12 +74,9 @@ public class MilesPerGallonController {
         /**
          * Reacts to the changed slider.
          * 
-         * @param ov
-         *            The element that changed
-         * @param oldValue
-         *            The old value
-         * @param newValue
-         *            The new value
+         * @param ov The element that changed
+         * @param oldValue The old value
+         * @param newValue The new value
          */
         public void changed(ObservableValue<? extends Number> ov,
                             Number oldValue,

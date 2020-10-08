@@ -12,8 +12,7 @@ public class SolveTowers {
     /**
      * Creates a TowersOfHanoi puzzle and solves it.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         

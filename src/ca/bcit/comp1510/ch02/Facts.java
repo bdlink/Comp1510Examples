@@ -13,8 +13,7 @@ public class Facts {
     /**
      * Prints various facts.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
 

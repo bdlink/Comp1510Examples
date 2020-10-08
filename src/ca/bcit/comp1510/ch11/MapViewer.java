@@ -1,7 +1,5 @@
 package ca.bcit.comp1510.ch11;
 
-import java.io.File;
-
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
@@ -24,8 +22,7 @@ public class MapViewer extends Application {
      * the underlying image (a map of Canada) is visible.
      *
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         Image img = new Image("map.gif");
@@ -46,8 +43,7 @@ public class MapViewer extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

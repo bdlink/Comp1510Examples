@@ -15,8 +15,7 @@ public class Echo {
     /**
      * Reads a character string from the user and prints it.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         String message;

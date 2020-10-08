@@ -15,8 +15,7 @@ public class PigLatinTranslator {
     /**
      * Translates a sentence of words into Pig Latin.
      * 
-     * @param sentence
-     *            a String
+     * @param sentence a String
      * @return result the original sentence converted to Pig Latin
      */
     public static String translate(String sentence) {
@@ -41,8 +40,7 @@ public class PigLatinTranslator {
      * suffix "yay" is appended to the word. Otherwise, the first letter or two
      * are moved to the end of the word, and "ay" is appended
      * 
-     * @param word
-     *            a String
+     * @param word a String
      * @return result the word translated to Pig Latin
      */
     private static String translateWord(String word) {
@@ -61,8 +59,7 @@ public class PigLatinTranslator {
     /**
      * Determines if the specified word begins with a vowel.
      * 
-     * @param word
-     *            a String
+     * @param word a String
      * @return true if the specified word begins with a vowel, else false.
      */
     private static boolean beginsWithVowel(String word) {
@@ -77,8 +74,7 @@ public class PigLatinTranslator {
      * Determines if the specified word begins with a particular two-character
      * consonant blend.
      * 
-     * @param word
-     *            a String
+     * @param word a String
      * @return true if the specified word begins with the blend, else false
      */
     private static boolean beginsWithBlend(String word) {

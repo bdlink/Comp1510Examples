@@ -16,8 +16,7 @@ public class Pizza extends FoodItem {
      * Constructs a Pizza object with the specified amount of fat (assumes
      * PIZZA_SERVINGS servings).
      * 
-     * @param fatGrams
-     *            an int
+     * @param fatGrams an int
      */
     public Pizza(int fatGrams) {
         super(fatGrams, PIZZA_SERVINGS);

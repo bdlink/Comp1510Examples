@@ -27,8 +27,7 @@ public class ProductCodes {
      * Counts the number of product codes that are entered with a
      * zone of R and and district greater than MAX_DISTRICT.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command line arguments (unused)
      */
     public static void main(String[] args) {
         String code;

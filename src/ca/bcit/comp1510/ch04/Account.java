@@ -12,7 +12,7 @@ import java.text.NumberFormat;
 public class Account {
     /** Interest rate of 3.5. */
     private static final double RATE = 0.035;
-
+        
     /** Account number, 0 .. 99999 */
     private long acctNumber;
 
@@ -26,12 +26,9 @@ public class Account {
      * Constructs an account object by defining its owner, account number, and
      * initial balance.
      * 
-     * @param owner
-     *            name of account owner in format first, last
-     * @param account
-     *            a long for the account number
-     * @param initial
-     *            a double representing the initial balance
+     * @param owner name of account owner in format first, last
+     * @param account a long for the account number
+     * @param initial a double representing the initial balance
      */
     public Account(String owner, long account, double initial) {
         name = owner;
@@ -42,8 +39,7 @@ public class Account {
     /**
      * Deposits the specified amount into the account. Returns the new balance.
      * 
-     * @param amount
-     *            a double for the amount to deposit
+     * @param amount a double for the amount to deposit
      * @return the new balance after the deposit
      */
     public double deposit(double amount) {
@@ -55,10 +51,8 @@ public class Account {
      * Withdraws the specified amount from the account and applies the fee.
      * Returns the new balance.
      * 
-     * @param amount
-     *            a double to withdraw
-     * @param fee
-     *            a double for a withdrawal fee
+     * @param amount a double to withdraw
+     * @param fee a double for a withdrawal fee
      * @return balance after the withdrawal
      */
     public double withdraw(double amount, double fee) {

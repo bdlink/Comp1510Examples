@@ -15,13 +15,17 @@ public class Wages {
     /**
      * Cues the user for the numbers of hours worked and calculates wages.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
-        final double rate = 8.25; // regular pay rate
+        
+        // regular pay rate
+        final double rate = 8.25;
+        
         final double overtimeRate = rate * 1.5;
-        final int standard = 40; // standard hours in a work week
+        
+        // standard hours in a work week
+        final int standard = 40;
 
         Scanner scan = new Scanner(System.in);
 

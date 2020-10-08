@@ -21,16 +21,11 @@ public class Hourly extends Employee {
     /**
      * Constructs a new Hourly object using the specified information.
      * 
-     * @param eName
-     *            employee name
-     * @param eAddress
-     *            employee address
-     * @param ePhone
-     *            employee phone
-     * @param socInNumber
-     *            social insurance number
-     * @param rate
-     *            hourly pay rate
+     * @param eName employee name
+     * @param eAddress employee address
+     * @param ePhone employee phone
+     * @param socInNumber social insurance number
+     * @param rate hourly pay rate
      */
     public Hourly(String eName,
                   String eAddress, 
@@ -43,8 +38,7 @@ public class Hourly extends Employee {
     /**
      * Adds the specified number of hours to this employee's accumulated hours.
      * 
-     * @param moreHours
-     *            additional hours worked
+     * @param moreHours additional hours worked
      */
     public void addHours(int moreHours) {
         hoursWorked += moreHours;

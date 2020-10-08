@@ -49,16 +49,20 @@ public class StyleOptionsPane extends VBox {
         options.setAlignment(Pos.CENTER);
         
         final int checkBoxSpacing = 20;
-        options.setSpacing(checkBoxSpacing); // between the check boxes
+        
+        // between the check boxes:
+        options.setSpacing(checkBoxSpacing);
 
         final int componentSpacing = 20;
-        setSpacing(componentSpacing); // between the text and the check boxes
+        
+        // between the text and the check boxes
+        setSpacing(componentSpacing);
         getChildren().addAll(phrase, options);
     }
 
     /**
      * Updates the font style of the displayed text.
-     * @param event invoked this method
+     * @param event indicates check box clicked on
      */
     public void processCheckBoxAction(ActionEvent event) {
         FontWeight weight = FontWeight.NORMAL;

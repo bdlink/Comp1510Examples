@@ -22,8 +22,7 @@ public class HelloMoon extends Application {
      * Loads the GUI from the FXML, sets the scene, and displays the primary
      * stage.
      * 
-     * @param stage
-     *            the primary stage for this application
+     * @param stage the primary stage for this application
      */
     @Override
     public void start(Stage stage) throws Exception {
@@ -39,8 +38,7 @@ public class HelloMoon extends Application {
     /**
      * Launches the application.
      * 
-     * @param args
-     *            the command line arguments
+     * @param args the command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

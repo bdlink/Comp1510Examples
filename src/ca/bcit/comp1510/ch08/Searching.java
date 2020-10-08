@@ -14,10 +14,8 @@ public class Searching {
      * search. Returns a reference to the target object from the array if found,
      * and null otherwise
      * 
-     * @param list
-     *            The array to be searched
-     * @param target
-     *            The object being searched for
+     * @param list The array to be searched
+     * @param target The object being searched for
      * @return The target if found, else null
      */
     public static Contact linearSearch(Contact[] list, Contact target) {
@@ -45,10 +43,8 @@ public class Searching {
      * passed in. Returns a reference to the target object from the array if
      * found, and null otherwise.
      * 
-     * @param list
-     *            Array to be searched
-     * @param target
-     *            Value to search for in array
+     * @param list Array to be searched
+     * @param target Value to search for in array
      * @return Target found from array, null if not found
      */
     public static Contact binarySearch(Contact[] list, Contact target) {

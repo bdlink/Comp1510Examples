@@ -35,8 +35,7 @@ public class ChangeListenerDemo extends Application {
      * center of the scene. The scene is updated using a change listener as the
      * window is resized.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         Group root = new Group();
@@ -67,7 +66,7 @@ public class ChangeListenerDemo extends Application {
     /**
      * Updates the position of the circle and the displayed width and height
      * when the window is resized.  This method implements the 
-     * ChangeListener<T> functional interface.
+     * ChangeListener functional interface.
      * 
      * @param property The property that changed
      * @param oldValue The old value
@@ -85,8 +84,7 @@ public class ChangeListenerDemo extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

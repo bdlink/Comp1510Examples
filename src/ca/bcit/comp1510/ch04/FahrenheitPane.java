@@ -51,7 +51,9 @@ public class FahrenheitPane extends GridPane {
         fahrenheit.setFont(font);
         fahrenheit.setPrefWidth(fieldWidth);
         fahrenheit.setAlignment(Pos.CENTER);
-        fahrenheit.setOnAction(this::processReturn); // Wow!
+        
+        // Easiest way: pass the method to process event
+        fahrenheit.setOnAction(this::processReturn);
 
         setAlignment(Pos.CENTER);
         setHgap(horizontalGap);
@@ -68,8 +70,7 @@ public class FahrenheitPane extends GridPane {
      * Computes and displays the converted temperature when the user presses the
      * return key while in the text field.
      * 
-     * @param event
-     *            invokes this method
+     * @param event signals new data present
      */
     public void processReturn(ActionEvent event) {
         final int freezingFahrenheit = 32;

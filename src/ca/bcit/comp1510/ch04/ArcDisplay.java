@@ -23,22 +23,23 @@ public class ArcDisplay extends Application {
      * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
-        Ellipse backgroundEllipse = new Ellipse(250, 150, 170, 100);
+        final Ellipse backgroundEllipse = new Ellipse(250, 150, 170, 100);
         backgroundEllipse.setFill(null);
         backgroundEllipse.setStroke(Color.GRAY);
-        backgroundEllipse.getStrokeDashArray().addAll(5.0, 5.0);
+        final double dash = 5.0;
+        backgroundEllipse.getStrokeDashArray().addAll(dash, dash);
 
-        Arc arc1 = new Arc(250, 150, 170, 100, 90, 90);
+        final Arc arc1 = new Arc(250, 150, 170, 100, 90, 90);
         arc1.setType(ArcType.OPEN);
         arc1.setStroke(Color.RED);
         arc1.setFill(null);
 
-        Arc arc2 = new Arc(250, 150, 170, 100, 20, 50);
+        final Arc arc2 = new Arc(250, 150, 170, 100, 20, 50);
         arc2.setType(ArcType.ROUND);
         arc2.setStroke(Color.GREEN);
         arc2.setFill(Color.GREEN);
 
-        Arc arc3 = new Arc(250, 150, 170, 100, 230, 130);
+        final Arc arc3 = new Arc(250, 150, 170, 100, 230, 130);
         arc3.setType(ArcType.CHORD);
         arc3.setStroke(Color.BLUE);
         arc3.setFill(null);
@@ -57,8 +58,7 @@ public class ArcDisplay extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

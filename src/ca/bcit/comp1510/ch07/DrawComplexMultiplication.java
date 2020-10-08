@@ -35,10 +35,13 @@ public class DrawComplexMultiplication extends Application {
     
     /** Second point from mouse click. */
     private Complex z2;
+    
     /** line from origin to z1. */
     private Line l1;
+    
     /** line from origin to z2. */
     private Line l2;
+    
     /** line to product.*/
     private Line product;
 
@@ -46,8 +49,7 @@ public class DrawComplexMultiplication extends Application {
      * Displays an initially empty scene, waiting for the user to draw lines
      * with the mouse.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         root = new Group();
@@ -112,8 +114,7 @@ public class DrawComplexMultiplication extends Application {
     /**
      * Adds a new line to the scene when the mouse button is pressed.
      * 
-     * @param event
-     *            invoked this method
+     * @param event indicates mouse was clicked
      */
     public void processMouseClick(MouseEvent event) {
         double x = event.getX();
@@ -164,8 +165,7 @@ public class DrawComplexMultiplication extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

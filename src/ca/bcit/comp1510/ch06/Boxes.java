@@ -21,8 +21,7 @@ public class Boxes extends Application {
      * Displays multiple rectangles with random width and height in random
      * locations. Narrow and short boxes are highlighted with a fill color
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         Group root = new Group();
@@ -66,8 +65,7 @@ public class Boxes extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

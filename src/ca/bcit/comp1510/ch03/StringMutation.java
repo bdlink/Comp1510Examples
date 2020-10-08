@@ -12,8 +12,7 @@ public class StringMutation {
     /**
      * Prints a String and various mutations of it.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         String phrase = "Change is inevitable";

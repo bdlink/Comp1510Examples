@@ -12,8 +12,7 @@ public class Roses {
     /**
      * Prints a poem (of sorts) on multiple lines.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         System.out.println("Roses are red,\n\tViolets are blue,\n"

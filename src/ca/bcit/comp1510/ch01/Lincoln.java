@@ -12,8 +12,7 @@ public class Lincoln {
     /**
      * Prints a presidential quote.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         System.out.println("A quote by Abraham Lincoln:");

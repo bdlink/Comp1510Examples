@@ -16,8 +16,7 @@ public class Book2 {
     /**
      * Constructs a Book object with the specified number of pages.
      * 
-     * @param numPages
-     *            an int
+     * @param numPages an int
      */
     public Book2(int numPages) {
         pages = numPages;
@@ -35,8 +34,7 @@ public class Book2 {
     /**
      * Sets (mutates) the number of pages in the Book.
      * 
-     * @param numPages
-     *            an int
+     * @param numPages an int
      */
     public void setPages(int numPages) {
         pages = numPages;

@@ -20,7 +20,7 @@ public class MiniQuiz {
     /**
      * Presents a short quiz.
      * 
-     * @param args command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         Question q1;
@@ -42,6 +42,7 @@ public class MiniQuiz {
         poseQuestion(q2, scan);
         poseQuestion(q3, scan);
     }
+    
     /**
      * Helper method to ask a question and check the answer.
      * @param q question to pose to the user

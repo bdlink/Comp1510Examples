@@ -27,7 +27,7 @@ public class Rocket extends Application {
     public void start(Stage primaryStage) {
         final double[] hullPoints = 
             {200, 25, 240, 60, 240, 230, 270, 260, 270,
-                    300, 140, 300, 140, 260, 160, 230, 160, 60};
+             300, 140, 300, 140, 260, 160, 230, 160, 60};
 
         Polygon rocket = new Polygon(hullPoints);
         rocket.setFill(Color.BEIGE);
@@ -61,8 +61,7 @@ public class Rocket extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

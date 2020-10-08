@@ -12,8 +12,7 @@ public class Zero {
     /**
      * Deliberately divides by zero to produce an exception.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         final int numerator = 10;

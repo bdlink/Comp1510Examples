@@ -1,7 +1,5 @@
 package ca.bcit.comp1510.ch04;
 
-import java.io.File;
-
 import javafx.application.Application;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
@@ -22,8 +20,7 @@ public class ImageDisplay extends Application {
     /**
      * Displays an image centered in a window.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         Image img = new Image("gull.jpg");
@@ -50,8 +47,7 @@ public class ImageDisplay extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

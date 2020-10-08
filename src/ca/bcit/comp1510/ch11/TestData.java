@@ -23,10 +23,8 @@ public class TestData {
      * Creates a file of test data that consists of ten lines each containing
      * ten integer values in the range 10 to 99.
      * 
-     * @param args
-     *            command line arguments (unused)
-     * @throws IOException
-     *             if the output file cannot be created.
+     * @param args command-line arguments (unused)
+     * @throws IOException if the output file cannot be created.
      */
     public static void main(String[] args) throws IOException {
         final int max = 10;

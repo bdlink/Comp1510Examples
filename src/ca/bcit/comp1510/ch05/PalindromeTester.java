@@ -15,8 +15,7 @@ public class PalindromeTester {
     /**
      * Tests Strings to see if they are palindromes.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         String str;
@@ -26,7 +25,7 @@ public class PalindromeTester {
 
         Scanner scan = new Scanner(System.in);
 
-        while (another.equalsIgnoreCase("y")) { // allows y or Y
+        while (another.equalsIgnoreCase("y")) {
 
             System.out.println("Enter a potential palindrome:");
             str = scan.nextLine();

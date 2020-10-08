@@ -13,8 +13,7 @@ public class Addition {
     /**
      * Concatenates and adds two numbers, then prints the results.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         System.out.println("24 and 45 concatenated: " + 24 + 45);

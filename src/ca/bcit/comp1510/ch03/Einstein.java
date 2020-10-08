@@ -23,32 +23,32 @@ public class Einstein extends Application {
     /**
      * Creates and displays several shapes.
      * 
-     * @param primaryStage
-     *            contains the scene
+     * @param primaryStage contains the scene
      */
     public void start(Stage primaryStage) {
 
-        Line line = new Line(35, 60, 150, 170);
+        final Line line = new Line(35, 60, 150, 170);
 
-        Circle circle = new Circle(100, 65, 20);
+        final Circle circle = new Circle(100, 65, 20);
         circle.setFill(Color.BLUE);
 
-        Rectangle rect = new Rectangle(60, 70, 250, 60);
+        final Rectangle rect = new Rectangle(60, 70, 250, 60);
         rect.setStroke(Color.RED);
         rect.setStrokeWidth(2);
         rect.setFill(null);
 
-        Ellipse ellipse = new Ellipse(200, 100, 150, 50);
+        final Ellipse ellipse = new Ellipse(200, 100, 150, 50);
         ellipse.setFill(Color.PALEGREEN);
 
-        Text quote = new Text(120, 100, "Out of clutter, find " 
+        final Text quote = new Text(120, 100, "Out of clutter, find " 
                 + "simplicity.\n-- Albert Einstein");
-        Text additional = new Text(90, 145, "What is this? \u0427\u0442\u043e "
+        final Text additional = new Text(90, 145, 
+                "What is this? \u0427\u0442\u043e "
                 + "\u044d\u0442\u043e \u0442\u0430\u043a\u043e\u0451? " 
                 + "འདི་ག་རེ་རེད།");
 
         Group root = new Group(ellipse, rect, circle, line, quote, additional);
-        Scene scene = new Scene(root, 400, 200);
+        final Scene scene = new Scene(root, 400, 200);
 
         primaryStage.setTitle("Einstein");
         primaryStage.setScene(scene);
@@ -58,8 +58,7 @@ public class Einstein extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

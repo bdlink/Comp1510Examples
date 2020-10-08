@@ -13,8 +13,7 @@ public class Propagation {
      * Creates a new ExceptionScope object and invokes the level1() method in
      * it. This demonstrates exception propagation.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         ExceptionScope demo = new ExceptionScope();

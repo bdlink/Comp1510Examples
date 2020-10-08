@@ -14,8 +14,7 @@ public class GradeReport {
     /**
      * Cues the user to enter a grade and prints comments accordingly.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         int grade;
@@ -35,25 +34,25 @@ public class GradeReport {
         System.out.print("That grade is ");
 
         switch (category) {
-        case perfect:
-            System.out.println("a perfect score. Well done.");
-            break;
-        case perfect - 1:
-            System.out.println("well above average. Excellent.");
-            break;
-        case average + 1:
-            System.out.println("above average. Nice job.");
-            break;
-        case average:
-            System.out.println("average.");
-            break;
-        case average - 1:
-            System.out.println("below average. You should see the");
-            System.out.println("instructor to clarify the material "
+            case perfect:
+                System.out.println("a perfect score. Well done.");
+                break;
+            case perfect - 1:
+                System.out.println("well above average. Excellent.");
+                break;
+            case average + 1:
+                System.out.println("above average. Nice job.");
+                break;
+            case average:
+                System.out.println("average.");
+                break;
+            case average - 1:
+                System.out.println("below average. You should see the");
+                System.out.println("instructor to clarify the material "
                     + "presented in class.");
-            break;
-        default:
-            System.out.println("not passing.");
+                break;
+            default:
+                System.out.println("not passing.");
         }
         
         scan.close();

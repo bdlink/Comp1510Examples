@@ -24,8 +24,7 @@ public class RationalTester {
      * Creates some rational number objects and performs various operations on
      * them.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         RationalNumber r1 = new RationalNumber(TEST1NUM, TEST1DEN);

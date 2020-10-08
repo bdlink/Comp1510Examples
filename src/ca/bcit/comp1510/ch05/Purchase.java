@@ -18,8 +18,7 @@ public class Purchase {
      * Calculates the final price of a purchased item using values entered by
      * the user.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
 
@@ -38,7 +37,8 @@ public class Purchase {
 
         // Skips non-int token and re-prompts for input
         while (!scan.hasNextInt()) {
-            scan.next(); // Reads and removes the non-int token from the scanner
+            // Reads and removes the non-int token from the scanner:
+            scan.next();
             System.out.print("The quantity must be an integer\n"
                     + "Enter the quantity: ");
         }
@@ -48,7 +48,7 @@ public class Purchase {
 
         // Skips non-int token and re-prompts for input
         while (!scan.hasNextDouble()) {
-            scan.next(); // Clears the non-int token from the scanner
+            scan.next();
             System.out.print("The unit price must be a number\n"
                     + "Enter the unit price: ");
         }

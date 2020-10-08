@@ -78,8 +78,7 @@ public class PickerDemo extends Application {
      * Gets the value of the date from the date picker and updates the
      * message with the corresponding day of the week.
      * 
-     * @param event
-     *            invokes this method
+     * @param event signals date choice made
      */
     public void processDateChoice(ActionEvent event) {
         LocalDate date = datePicker.getValue();
@@ -90,8 +89,7 @@ public class PickerDemo extends Application {
      * Gets the color specified in the color picker and sets the
      * color of the displayed message.
      * 
-     * @param event
-     *            invokes this method
+     * @param event signals colour choice made
      */
     public void processColorChoice(ActionEvent event) {
         message.setFill(colorPicker.getValue());
@@ -100,8 +98,7 @@ public class PickerDemo extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

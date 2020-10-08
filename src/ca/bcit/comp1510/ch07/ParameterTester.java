@@ -22,8 +22,7 @@ public class ParameterTester {
      * actual parameters to the changeValues method. Prints their values before
      * and after calling the method.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         ParameterModifier modifier = new ParameterModifier();

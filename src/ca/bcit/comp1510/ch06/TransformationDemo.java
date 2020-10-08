@@ -31,10 +31,10 @@ public class TransformationDemo extends Application {
      */
     public void start(Stage primaryStage) {
         // TRANSLATION
-        Rectangle rec1 = new Rectangle(100, 100, 200, 50);
+        final Rectangle rec1 = new Rectangle(100, 100, 200, 50);
         rec1.setFill(Color.STEELBLUE);
 
-        Rectangle rec2 = new Rectangle(100, 100, 200, 50);
+        final Rectangle rec2 = new Rectangle(100, 100, 200, 50);
         rec2.setFill(Color.ORANGE);
         rec2.setTranslateX(70);
         rec2.setTranslateY(10);
@@ -47,11 +47,11 @@ public class TransformationDemo extends Application {
         imgView.setScaleY(0.7);
 
         // ROTATION
-        Rectangle rec = new Rectangle(50, 100, 200, 50);
+        final Rectangle rec = new Rectangle(50, 100, 200, 50);
         rec.setFill(Color.STEELBLUE);
         rec.setRotate(40);
         
-        Text text = new Text(270, 125, "Tilted Text!");
+        final Text text = new Text(270, 125, "Tilted Text!");
         text.setFont(new Font("Courier", 24));
         text.setRotate(-15);
 
@@ -74,8 +74,7 @@ public class TransformationDemo extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

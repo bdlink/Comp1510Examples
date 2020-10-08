@@ -14,7 +14,7 @@ public class MinOfThree {
     /**
      * Reads three integers from the user and determines the smallest
      * value.
-     * @param args command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         int num1;
@@ -29,6 +29,8 @@ public class MinOfThree {
         num2 = scan.nextInt();
         num3 = scan.nextInt();
 
+        // Note this is a poor algorithm, in that it is too complex.
+        // It also does not generalize easily to more values.
         if (num1 < num2) {
             if (num1 < num3) {
                 min = num1;
@@ -43,11 +45,7 @@ public class MinOfThree {
         
         System.out.println("Minimum value: " + min);
         
-        /* Note this is a poor algorithm, in that it is too complex.
-           It also does not generalize easily to more values
-           A simpler and clearer algorithm follows:
-        */
-
+        // A simpler and clearer algorithm follows:
         System.out.println("Enter three integers: ");
 
         min = scan.nextInt();

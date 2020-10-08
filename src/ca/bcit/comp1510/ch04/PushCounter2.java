@@ -28,15 +28,16 @@ public class PushCounter2 extends Application {
      * Presents a GUI containing a button and text that displays how many times
      * the button is pushed.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         count = 0;
         countText = new Text("Pushes: 0");
 
         Button push = new Button("Push Me!");
-        push.setOnAction(new ButtonHandler()); // This is different!
+        
+        //Old way, pass object that contains action method
+        push.setOnAction(new ButtonHandler());
 
         FlowPane pane = new FlowPane(push, countText);
         pane.setAlignment(Pos.CENTER);
@@ -57,8 +58,7 @@ public class PushCounter2 extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);
@@ -77,8 +77,7 @@ public class PushCounter2 extends Application {
         /**
          * Handles the event.
          * 
-         * @param event
-         *            invokes this method
+         * @param event signals button was pressed
          */
         public void handle(ActionEvent event) {
             count++;

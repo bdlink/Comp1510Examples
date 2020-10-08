@@ -1,7 +1,5 @@
 package ca.bcit.comp1510.ch11;
 
-import java.io.File;
-
 import javafx.application.Application;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -36,8 +34,7 @@ public class FoodImages extends Application {
      * Displays a split pane with a list of food items on the left and an
      * image of the selected food item on the right.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         final String[] food = {"apples", "asparagus", "bacon",
@@ -89,12 +86,9 @@ public class FoodImages extends Application {
      * Processes a list view selection by getting the index of the selected item
      * and displaying the corresponding image.
      * 
-     * @param val
-     *            The value that changed
-     * @param oldValue
-     *            The old value
-     * @param newValue
-     *            The new value
+     * @param val The value that changed
+     * @param oldValue The old value
+     * @param newValue The new value
      */
     public void processListSelection(ObservableValue<? extends String> val,
                                      String oldValue,
@@ -106,8 +100,7 @@ public class FoodImages extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command line arguments
      */
     public static void main(String[] args) {
         launch(args);

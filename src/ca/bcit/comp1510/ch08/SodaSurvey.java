@@ -16,8 +16,7 @@ public class SodaSurvey {
      * Determines and prints the average of each row (soda) and each column
      * (respondent) of the survey scores.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         final int[][] scores = {{3, 4, 5, 2, 1, 4, 3, 2, 4, 4},

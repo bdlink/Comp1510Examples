@@ -21,8 +21,7 @@ public class TwoDArray {
      * Creates a 2D array of integers and fills it with increasing integer
      * values, then prints them out.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         int[][] table = new int[ROWS][COLUMNS];

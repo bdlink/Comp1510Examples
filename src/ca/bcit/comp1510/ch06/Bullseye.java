@@ -20,8 +20,7 @@ public class Bullseye extends Application {
      * Creates and presents the program window. Displays a target using
      * concentric black and white circles and a red center.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         Group root = new Group();
@@ -61,8 +60,7 @@ public class Bullseye extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

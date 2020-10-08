@@ -11,8 +11,7 @@ public class Sorting {
     /**
      * Sorts the specified array of objects using the selection sort algorithm.
      * 
-     * @param list
-     *            Array to be sorted
+     * @param list Array to be sorted
      */
     public static void selectionSort(Contact[] list) {
         int min;
@@ -36,8 +35,7 @@ public class Sorting {
     /**
      * Sorts the specified array of objects using the insertion sort algorithm.
      * 
-     * @param list
-     *            Array to be sorted
+     * @param list Array to be sorted
      */
     public static void insertionSort(Contact[] list) {
         for (int index = 1; index < list.length; index++) {

@@ -22,8 +22,7 @@ public class FontDemo extends Application {
     /**
      * Displays three Text objects using various font styles.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         final int smallFont = 14;
@@ -67,8 +66,7 @@ public class FontDemo extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

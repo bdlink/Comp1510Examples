@@ -14,8 +14,7 @@ public class GasMileage {
     /**
      * Calculates fuel efficiency based on values entered by the user.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         int miles;

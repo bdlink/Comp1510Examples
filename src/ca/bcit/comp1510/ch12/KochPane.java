@@ -28,12 +28,11 @@ public class KochPane extends Pane {
      * Draws the fractal by clearing the pane and then adding three lines of the
      * specified order between three predetermined points.
      * 
-     * @param order
-     *            Of the fractal (1, 2, ...)
+     * @param order Of the fractal (1, 2, ...)
      */
     public void makeFractal(int order) {
         getChildren().clear();
-        addLine(order, 200, 20, 60, 300); // Checkstyle
+        addLine(order, 200, 20, 60, 300);
         addLine(order, 60, 300, 340, 300);
         addLine(order, 340, 300, 200, 20);
     }
@@ -64,16 +63,17 @@ public class KochPane extends Pane {
         if (order == 1) {
             getChildren().add(new Line(x1, y1, x5, y5));
         } else {
-            deltaX = x5 - x1; // distance between the end points
+            deltaX = x5 - x1;
             deltaY = y5 - y1;
 
-            x2 = x1 + deltaX / third; // one third
+            x2 = x1 + deltaX / third;
             y2 = y1 + deltaY / third;
 
-            x3 = (x1 + x5) / 2 + SQ * (y1 - y5); // projection
+            // projection
+            x3 = (x1 + x5) / 2 + SQ * (y1 - y5);
             y3 = (y1 + y5) / 2 + SQ * (x5 - x1);
 
-            x4 = x1 + deltaX * 2 / third; // two thirds
+            x4 = x1 + deltaX * 2 / third;
             y4 = y1 + deltaY * 2 / third;
 
             addLine(order - 1, x1, y1, x2, y2);

@@ -13,15 +13,16 @@ public class TempConverter {
      * Computes the Fahrenheit equivalent of a specific Celsius value using the
      * formula F = (9/5)C + 32.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         final int base = 32;
         final double conversionFactor = 1.8;
 
         double fahrenheitTemp;
-        final int celsiusTemp = 24; // value to convert
+        
+        // value to convert:
+        final int celsiusTemp = 24;
 
         fahrenheitTemp = celsiusTemp * conversionFactor + base;
 

@@ -10,24 +10,23 @@ package ca.bcit.comp1510.ch07;
 public class Address {
     /** Street address. */
     private String streetAddress;
+    
     /** city. */
     private String city;
+    
     /** State. */
     private String state;
+    
     /** Postal code, any country. */
     private String postalCode;
 
     /**
      * Constructs an Address object with the specified data.
      *
-     * @param street
-     *        Holds new streetAddress
-     * @param town
-     *        Holds new city
-     * @param st
-     *        Holds new state
-     * @param code
-     *        Holds new postalCode
+     * @param street Holds new streetAddress
+     * @param town Holds new city
+     * @param st Holds new state
+     * @param code Holds new postalCode
      */
     public Address(String street, String town, String st, String code) {
         streetAddress = street;

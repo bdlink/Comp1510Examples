@@ -1,7 +1,5 @@
 package ca.bcit.comp1510.ch12;
 
-import java.io.File;
-
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.geometry.Pos;
@@ -48,8 +46,7 @@ public class KochSnowflake extends Application {
      * Displays two buttons that control the order of the fractal shown in the
      * pane below the buttons.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         Image upImage = new Image("up.png");
@@ -94,8 +91,7 @@ public class KochSnowflake extends Application {
      * Increments the fractal order when the up button is pressed. Disables the
      * up button if the maximum order is reached.
      * 
-     * @param event
-     *            invoked this method
+     * @param event signal button pressed
      */
     public void processUpButtonPress(ActionEvent event) {
         order++;

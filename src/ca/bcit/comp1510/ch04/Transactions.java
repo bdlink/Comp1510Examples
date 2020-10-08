@@ -15,8 +15,7 @@ public class Transactions {
     /**
      * Creates some bank accounts and requests various services.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         final Account acct1 = new Account("Grace Hopper", 72354, 102.56);

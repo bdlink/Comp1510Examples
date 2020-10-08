@@ -13,7 +13,7 @@ public class ReverseNumber {
 
     /**
      * Reverses the digits of an integer mathematically.
-     * @param args command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         int number;

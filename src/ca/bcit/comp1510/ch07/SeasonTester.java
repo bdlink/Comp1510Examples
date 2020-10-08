@@ -12,8 +12,7 @@ public class SeasonTester {
     /**
      * Iterates through the values of the Season enumerated type.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         for (Season time : Season.values()) {

@@ -10,7 +10,7 @@ package ca.bcit.comp1510.ch04;
 public class RollingDice {
     /**
      * Driver program creates two Die objects and rolls them.
-     * @param args command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         final int newFace = 4;

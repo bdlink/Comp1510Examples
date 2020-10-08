@@ -36,7 +36,7 @@ public class URLDissector {
             urlScan = new Scanner(url);
             urlScan.useDelimiter("/");
 
-            // Prints each part of the url
+            // Prints each part of the URL
             while (urlScan.hasNext()) {
                 System.out.println("   " + urlScan.next());
             }

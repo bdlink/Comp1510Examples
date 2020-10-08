@@ -15,8 +15,7 @@ public class TowersOfHanoi {
     /**
      * Constructs a TowersOfHanoi object with the specified number of disks.
      * 
-     * @param disks
-     *            The height of the tower, in disks.
+     * @param disks The height of the tower, in disks.
      */
     public TowersOfHanoi(int disks) {
         totalDisks = disks;

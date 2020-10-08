@@ -18,10 +18,8 @@ public class RationalNumber {
      * Constructs a RationalNumber. Ensures a nonzero denominator and stores
      * the sign in the numerator.
      * 
-     * @param numer
-     *            the numerator (an int)
-     * @param denom
-     *            the denominator (an int)
+     * @param numer the numerator (an int)
+     * @param denom the denominator (an int)
      */
     public RationalNumber(int numer, int denom) {
         if (denom == 0) {
@@ -69,8 +67,7 @@ public class RationalNumber {
      * Adds this rational number to the one passed as a parameter. A common
      * denominator is found by multiplying the individual denominators.
      * 
-     * @param op2
-     *            a RationalNumber
+     * @param op2 a RationalNumber
      * @return sum of this RationalNumber and op2
      */
     public RationalNumber add(RationalNumber op2) {
@@ -86,8 +83,7 @@ public class RationalNumber {
      * Subtracts the rational number passed as a parameter from this rational
      * number.
      * 
-     * @param op2
-     *            a RationalNumber
+     * @param op2 a RationalNumber
      * @return difference between this RationalNumber and op2
      */
     public RationalNumber subtract(RationalNumber op2) {
@@ -103,8 +99,7 @@ public class RationalNumber {
      * Multiplies the rational number passed as a parameter with this rational
      * number.
      * 
-     * @param op2
-     *            a RationalNumber
+     * @param op2 a RationalNumber
      * @return product of this RationalNumber and op2
      */
     public RationalNumber multiply(RationalNumber op2) {
@@ -118,8 +113,7 @@ public class RationalNumber {
      * Divides this rational number by the one passed as a parameter by
      * multiplying by the reciprocal of the second rational.
      * 
-     * @param op2
-     *            a RationalNumber
+     * @param op2 a RationalNumber
      * @return quotient of this RationalNumber divided by op2
      */
     public RationalNumber divide(RationalNumber op2) {
@@ -130,8 +124,7 @@ public class RationalNumber {
      * Determines if this rational number is equal to the one passed as a
      * parameter. Assumes they are both reduced.
      * 
-     * @param op2
-     *            a RationalNumber
+     * @param op2 a RationalNumber
      * @return true if this RationalNumber is like op2, else false
      */
     public boolean isLike(RationalNumber op2) {
@@ -173,10 +166,8 @@ public class RationalNumber {
      * Computes and returns the greatest common divisor of the two positive
      * parameters. Uses Euclid's algorithm.
      * 
-     * @param num1
-     *            an int
-     * @param num2
-     *            an int
+     * @param num1 an int
+     * @param num2 an int
      * @return the greatest common divisor of num1 and num2
      */
     private int gcd(int num1, int num2) {

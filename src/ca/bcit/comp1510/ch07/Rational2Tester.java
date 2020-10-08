@@ -26,8 +26,7 @@ public class Rational2Tester {
      * Creates some rational number objects and performs various operations on
      * them.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command line arguments (unused)
      */
     public static void main(String[] args) {
         RationalNumber2 r1 = new RationalNumber2(TEST1NUM, TEST1DEN);
@@ -63,9 +62,7 @@ public class Rational2Tester {
 
     }
 
-    /**
-     * Groups together error test cases.
-     */
+    //Groups together error test cases.
     private static void testErrorCases() {
         try {
             new RationalNumber2(2, 0);
@@ -85,6 +82,7 @@ public class Rational2Tester {
         } catch (IllegalArgumentException ex) {
             System.out.println("Divide by zero test worked");
         }
+        
         // uncaught exception
         new RationalNumber2(1, 1).divide(RationalNumber2.ZERO);
 

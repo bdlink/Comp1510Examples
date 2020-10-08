@@ -14,8 +14,7 @@ public class PigLatin {
     /**
      * Reads sentences and translates them into Pig Latin.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         String sentence;

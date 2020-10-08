@@ -16,8 +16,7 @@ public class Average {
      * Computes the average of a set of values entered by the user. The running
      * sum is printed as the numbers are entered.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         int sum = 0;
@@ -30,7 +29,8 @@ public class Average {
         System.out.print("Enter an integer (0 to quit): ");
         value = scan.nextInt();
 
-        while (value != 0) { // sentinel value of 0 to terminate loop
+        // sentinel value of 0 to terminate loop
+        while (value != 0) {
             count++;
 
             sum += value;

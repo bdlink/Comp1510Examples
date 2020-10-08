@@ -16,8 +16,7 @@ public class Age {
     /**
      * Reads the user's age and prints comments accordingly.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
 

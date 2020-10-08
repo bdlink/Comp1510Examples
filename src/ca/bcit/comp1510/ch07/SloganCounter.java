@@ -13,8 +13,7 @@ public class SloganCounter {
      * Creates several Slogan objects and prints the number of objects that were
      * created.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         Slogan obj;

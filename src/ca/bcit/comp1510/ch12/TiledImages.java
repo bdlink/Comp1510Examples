@@ -1,7 +1,5 @@
 package ca.bcit.comp1510.ch12;
 
-import java.io.File;
-
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -39,8 +37,7 @@ public class TiledImages extends Application {
     /**
      * Sets up the display of a series of tiled images.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         image = new Image("girl.jpg");
@@ -99,8 +96,7 @@ public class TiledImages extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

@@ -18,8 +18,7 @@ public class Quadratic {
     /**
      * Determines the roots of a quadratic equation.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         // ax^2 + bx + c

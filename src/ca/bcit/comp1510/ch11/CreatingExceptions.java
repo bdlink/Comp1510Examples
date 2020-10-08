@@ -14,10 +14,8 @@ public class CreatingExceptions {
     /**
      * Creates an exception object and possibly throws it.
      * 
-     * @param args
-     *            command line arguments (unused)
-     * @throws OutOfRangeException
-     *             if user input is 'out of range'
+     * @param args command line arguments (unused)
+     * @throws OutOfRangeException if user input is 'out of range'
      */
     public static void main(String[] args) throws OutOfRangeException {
         final int minimum = 25;
@@ -38,7 +36,8 @@ public class CreatingExceptions {
             throw problem;
         }
 
-        System.out.println("End of main method."); // May never be reached
+        // May never be reached
+        System.out.println("End of main method.");
 
     }
 }

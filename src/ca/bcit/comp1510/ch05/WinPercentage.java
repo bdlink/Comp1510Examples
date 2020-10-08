@@ -14,7 +14,7 @@ public class WinPercentage {
 
     /**
      * Computes the percentage of games won by a team.
-     * @param args command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         final int numGames = 12;

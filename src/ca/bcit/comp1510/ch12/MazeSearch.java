@@ -13,8 +13,7 @@ public class MazeSearch {
      * Creates a new maze, prints its original form, attempts to
      * solve it, and prints out its final form.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         Maze labyrinth = new Maze();

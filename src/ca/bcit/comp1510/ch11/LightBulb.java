@@ -1,7 +1,5 @@
 package ca.bcit.comp1510.ch11;
 
-import java.io.File;
-
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.geometry.Pos;
@@ -49,15 +47,15 @@ public class LightBulb extends Application {
      * Displays an image of a light bulb that can be turned on and off using
      * enabled buttons with tool tips set.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         Image img = new Image("lightBulbs.png");
         bulbView = new ImageView(img);
 
+        // off
         bulbView.setViewport(
-                new Rectangle2D(0, 0, VIEW_WIDTH, VIEW_HEIGHT)); // off
+                new Rectangle2D(0, 0, VIEW_WIDTH, VIEW_HEIGHT));
 
         final int preferedButtonWidth = 70;
         onButton = new Button("On");
@@ -96,8 +94,7 @@ public class LightBulb extends Application {
      * appropriately to show either the on or off bulb. Also swaps the disable
      * state of both buttons.
      * 
-     * @param event
-     *            invokes this method
+     * @param event invokes this method
      */
     public void processButtonPress(ActionEvent event) {
         if (event.getSource() == onButton) {
@@ -116,8 +113,7 @@ public class LightBulb extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command line arguments
      */
     public static void main(String[] args) {
         launch(args);

@@ -12,8 +12,7 @@ public class StudentBody {
     /**
      * Creates some Address and Student objects and prints them.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         Address school =

@@ -17,7 +17,8 @@ public class IncomeExchangeSimulation {
         final var exchange = 50;
         final Random ran = new Random();
         int[] person = new int[population];
-        for (int i = 0; i < population; i++ ) {
+        
+        for (int i = 0; i < population; i++) {
             person[i] = initialWealth;
         }
         for (int i = 0; i < iterations; i++) {

@@ -14,12 +14,9 @@ public class Searching {
      * search. Returns a reference to the target object from the array if found,
      * and null otherwise
      * 
-     * @param <T>
-     *            Type placeholder for comparable type
-     * @param list
-     *            The array to be searched
-     * @param target
-     *            The object being searched for
+     * @param <T> Type placeholder for comparable type
+     * @param list The array to be searched
+     * @param target The object being searched for
      * @return The target if found, else null
      */
     public static <T extends Comparable<T>> T linearSearch(T[] list, T target) {
@@ -47,12 +44,9 @@ public class Searching {
      * passed in. Returns a reference to the target object from the array if
      * found, and null otherwise.
      * 
-     * @param <T>
-     *            Type placeholder for comparable type
-     * @param list
-     *            Array to be searched
-     * @param target
-     *            Value to search for in array
+     * @param <T> Type placeholder for comparable type
+     * @param list Array to be searched
+     * @param target Value to search for in array
      * @return Target found from array, null if not found
      */
     public static <T extends Comparable<T>> T binarySearch(T[] list, T target) {

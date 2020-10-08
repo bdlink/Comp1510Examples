@@ -14,7 +14,7 @@ public class Multiples {
     /**
      * Prints multiples of a user-specified number up to a user-
      * specified limit.
-     * @param args command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         final int perLine = 5;

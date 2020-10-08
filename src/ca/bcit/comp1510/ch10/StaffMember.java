@@ -30,12 +30,9 @@ public abstract class StaffMember {
     /**
      * Constructs a new StaffMember object using the specified information.
      * 
-     * @param eName
-     *            employee name
-     * @param eAddress
-     *            employee address
-     * @param ePhone
-     *            employee phone
+     * @param eName employee name
+     * @param eAddress employee address
+     * @param ePhone employee phone
      */
     public StaffMember(String eName, String eAddress, String ePhone) {
         name = eName;
@@ -68,8 +65,7 @@ public abstract class StaffMember {
      * Reads instance data from scanner. Subclasses that add instance data
      * should override to read additional data.
      * 
-     * @param scan
-     *            Should be positioned before the instance data. Each field
+     * @param scan Should be positioned before the instance data. Each field
      *            should be a token.
      */
     public void readInstanceData(Scanner scan) {

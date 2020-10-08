@@ -11,10 +11,8 @@ public class Sorting {
     /**
      * Sorts the specified array of objects using the selection sort algorithm.
      * 
-     * @param <T>
-     *            Type placeholder for comparable type
-     * @param list
-     *            Array to be sorted
+     * @param <T> Type placeholder for comparable type
+     * @param list Array to be sorted
      */
     public static <T extends Comparable<T>> void selectionSort(T[] list) {
         int min;
@@ -38,10 +36,8 @@ public class Sorting {
     /**
      * Sorts the specified array of objects using the insertion sort algorithm.
      * 
-     * @param <T>
-     *            Type placeholder for comparable type
-     * @param list
-     *            Array to be sorted
+     * @param <T> Type placeholder for comparable type
+     * @param list Array to be sorted
      */
     public static <T extends Comparable<T>> void insertionSort(T[] list) {
         for (int index = 1; index < list.length; index++) {

@@ -39,24 +39,28 @@ public class Maze {
         boolean done = false;
 
         if (valid(row, column)) {
-            grid[row][column] = TRIED; // this cell has been tried
+            grid[row][column] = TRIED;
 
             if (row == grid.length - 1 && column == grid[0].length - 1) {
-                done = true; // the maze is solved
+                done = true;
             } else {
-                done = traverse(row + 1, column); // down
+                // down
+                done = traverse(row + 1, column);
                 if (!done) {
-                    done = traverse(row, column + 1); // right
+                    // right
+                    done = traverse(row, column + 1);
                 }
                 if (!done) {
-                    done = traverse(row - 1, column); // up
+                    // up
+                    done = traverse(row - 1, column);
                 }
                 if (!done) {
-                    done = traverse(row, column - 1); // left
+                    // left
+                    done = traverse(row, column - 1);
                 }
             }
 
-            if (done) { // this location is part of the final path
+            if (done) {
                 grid[row][column] = PATH;
             }
         }
@@ -67,10 +71,8 @@ public class Maze {
     /**
      * Determines if the specified location is valid.
      * 
-     * @param row
-     *            The index of the row
-     * @param column
-     *            The index of the column
+     * @param row The index of the row
+     * @param column The index of the column
      * @return true if the cell is in the bounds of the matrix, else false
      */
     private boolean valid(int row, int column) {

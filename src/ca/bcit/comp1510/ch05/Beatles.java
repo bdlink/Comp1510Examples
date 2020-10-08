@@ -13,7 +13,7 @@ public class Beatles {
 
     /**
      * Stores and midifiers a list of band members.
-     * @param args command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         ArrayList<String> band = new ArrayList<String>();

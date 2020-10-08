@@ -19,7 +19,9 @@ public class Messages {
         Thought parked = new Thought();
         Advice dates = new Advice();
         parked.message();
-        dates.message(); // Invokes the overridden version of the method.
+        
+        // Invokes the overridden version of the method.
+        dates.message();
     }
 }
 

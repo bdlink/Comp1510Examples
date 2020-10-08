@@ -16,8 +16,7 @@ public class TestCombIf {
     /**
      * Acquires int value from user and print number of digits using else-if.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         int a;

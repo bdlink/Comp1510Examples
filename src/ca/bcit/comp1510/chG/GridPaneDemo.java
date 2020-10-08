@@ -24,8 +24,7 @@ public class GridPaneDemo extends Application {
     /**
      * Creates the GridPane.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         GridPane gridPane = new GridPane();
@@ -63,7 +62,7 @@ public class GridPaneDemo extends Application {
         GridPane.setHalignment(greeting, HPos.CENTER);
         gridPane.add(greeting, 0, 3, 3, 1);
 
-        Scene scene = new Scene(gridPane, 550, 250);
+        final Scene scene = new Scene(gridPane, 550, 250);
 
         primaryStage.setTitle("Grid Pane Demo");
         primaryStage.setScene(scene);
@@ -73,8 +72,7 @@ public class GridPaneDemo extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

@@ -34,8 +34,7 @@ public class IceCream {
     /**
      * Creates and uses variables of the Flavour type.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         Flavour cone1;

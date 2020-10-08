@@ -8,30 +8,21 @@ package ca.bcit.comp1510.ch08;
  * @version 2017
  */
 public class Contact implements Comparable<Contact> {
-    /**
-     * The Contact's first name.
-     */
+    /** The Contact's first name. */
     private String firstName;
 
-    /**
-     * The Contact's last name.
-     */
+    /** The Contact's last name. */
     private String lastName;
 
-    /**
-     * The Contact's phone number.
-     */
+    /** The Contact's phone number. */
     private String phone;
 
     /**
      * Constructs a new Contact object with the specified data.
      * 
-     * @param first
-     *            The first name
-     * @param last
-     *            The last name
-     * @param telephone
-     *            The telephone number
+     * @param first The first name
+     * @param last The last name
+     * @param telephone The telephone number
      */
     public Contact(String first, String last, String telephone) {
         firstName = first;
@@ -67,8 +58,7 @@ public class Contact implements Comparable<Contact> {
     /**
      * Returns true if this Contact is equal to the specified Object.
      * 
-     * @param other
-     *            The object being compared to this Contact
+     * @param other The object being compared to this Contact
      * @return true if they are the same, else false
      */
     public boolean equals(Object other) {
@@ -92,8 +82,7 @@ public class Contact implements Comparable<Contact> {
     /**
      * Uses both last and first names to determine ordering.
      * 
-     * @param other
-     *            Contact to compare to this one
+     * @param other Contact to compare to this one
      * @return value whose sign indicates relationship of this contact to other
      */
     public int compareTo(Contact other) {

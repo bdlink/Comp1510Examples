@@ -15,8 +15,7 @@ public class Primes {
     /**
      * Stores some prime numbers in an array and prints them.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
 

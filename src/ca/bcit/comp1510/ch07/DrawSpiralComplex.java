@@ -33,8 +33,7 @@ public class DrawSpiralComplex extends Application {
      * Displays an initially empty scene, waiting for the user to draw lines
      * with the mouse.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         root = new Group();
@@ -55,9 +54,8 @@ public class DrawSpiralComplex extends Application {
         addAxis(scene);
         
         addCircles(scene, scale, maxMag);
-        /* 
-         * calculate starting point to be nth root of 2
-         */
+
+        //calculate starting point to be nth root of 2
         final double nRoot = 8.0;
         
         final Complex initialPoint = 
@@ -123,8 +121,7 @@ public class DrawSpiralComplex extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

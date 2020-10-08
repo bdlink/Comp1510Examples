@@ -12,8 +12,7 @@ public class Words {
     /**
      * Instantiates a derived class and invokes its inherited and local methods.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         Dictionary webster = new Dictionary();

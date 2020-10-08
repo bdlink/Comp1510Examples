@@ -11,7 +11,7 @@ public class CoinFlip {
 
     /**
      * Creates a Coin object, flips it, and prints the result.
-     * @param args command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         Coin myCoin = new Coin();

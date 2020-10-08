@@ -21,10 +21,8 @@ public class Question implements Complexity {
      * Constructs a Question with specified query and result and a default
      * complexity.
      * 
-     * @param query
-     *            a String
-     * @param result
-     *            a String
+     * @param query a String
+     * @param result a String
      */
     public Question(String query, String result) {
         question = query;
@@ -35,8 +33,7 @@ public class Question implements Complexity {
     /**
      * Sets the complexity level for this question.
      * 
-     * @param level
-     *            an int
+     * @param level an int
      */
     public void setComplexity(int level) {
         complexityLevel = level;
@@ -72,8 +69,7 @@ public class Question implements Complexity {
     /**
      * Returns true if the candidate answer matches the answer, else false.
      * 
-     * @param candidateAnswer
-     *            a String
+     * @param candidateAnswer a String
      * @return true if answers match, else false
      */
     public boolean answerCorrect(String candidateAnswer) {

@@ -15,8 +15,7 @@ public class Decode {
     /**
      * Decodes a message by reversing each word in a string.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

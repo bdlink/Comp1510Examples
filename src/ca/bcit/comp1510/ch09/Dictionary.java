@@ -35,8 +35,7 @@ public class Dictionary extends Book {
     /**
      * Sets (mutates) the number of definitions.
      * 
-     * @param numDefinitions
-     *            an int
+     * @param numDefinitions an int
      */
     public void setDefinitions(int numDefinitions) {
         definitions = numDefinitions;

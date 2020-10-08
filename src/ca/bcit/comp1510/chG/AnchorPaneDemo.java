@@ -18,8 +18,7 @@ public class AnchorPaneDemo extends Application {
     /**
      * Creates the AnchorPane.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         Button prev = new Button("Prev");
@@ -34,7 +33,7 @@ public class AnchorPaneDemo extends Application {
         AnchorPane.setBottomAnchor(next, 20.0);
         AnchorPane.setRightAnchor(next, 30.0);
 
-        Scene scene = new Scene(navPane, 500, 400);
+        final Scene scene = new Scene(navPane, 500, 400);
 
         primaryStage.setTitle("Anchor Pane Demo");
         primaryStage.setScene(scene);
@@ -44,8 +43,7 @@ public class AnchorPaneDemo extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

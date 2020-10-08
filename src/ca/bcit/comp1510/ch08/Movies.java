@@ -19,9 +19,8 @@ public class Movies {
      * Creates a DVDCollection object and adds some DVDs to it. Prints reports
      * about the status of the collection.
      * 
-     * @param args
-     *            command line arguments (unused)
-     * @throws FileNotFoundException 
+     * @param args command line arguments (unused)
+     * @throws FileNotFoundException if file is not found
      */
     public static void main(String[] args) throws FileNotFoundException {
         DVDCollection movies = new DVDCollection();

@@ -23,10 +23,8 @@ public class DisplayFile extends Application {
      * Presents a file chooser dialog, reads the selected file and loads it into
      * a text area.
      * 
-     * @param primaryStage
-     *            a Stage
-     * @throws IOException
-     *             if file cannot be opened
+     * @param primaryStage a Stage
+     * @throws IOException if file cannot be opened
      */
     public void start(Stage primaryStage) throws IOException {
         FileChooser chooser = new FileChooser();
@@ -60,8 +58,7 @@ public class DisplayFile extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command line arguments
      */
     public static void main(String[] args) {
         launch(args);

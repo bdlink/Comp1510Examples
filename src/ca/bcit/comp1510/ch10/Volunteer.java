@@ -19,12 +19,9 @@ public class Volunteer extends StaffMember {
     /**
      * Constructs a new Volunteer object using the specified information.
      * 
-     * @param eName
-     *            employee name
-     * @param eAddress
-     *            employee address
-     * @param ePhone
-     *            employee phone
+     * @param eName employee name
+     * @param eAddress employee address
+     * @param ePhone employee phone
      */
     public Volunteer(String eName, String eAddress, String ePhone) {
         super(eName, eAddress, ePhone);

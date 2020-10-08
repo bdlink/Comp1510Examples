@@ -27,8 +27,7 @@ public class RubberLines extends Application {
      * Displays an initially empty scene, waiting for the user to draw lines
      * with the mouse.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         root = new Group();
@@ -48,8 +47,7 @@ public class RubberLines extends Application {
     /**
      * Adds a new line to the scene when the mouse button is pressed.
      * 
-     * @param event
-     *            invoked this method
+     * @param event indicates mouse was pressed
      */
     public void processMousePress(MouseEvent event) {
         currentLine =
@@ -64,8 +62,7 @@ public class RubberLines extends Application {
      * Updates the end point of the current line as the mouse is dragged,
      * creating the rubber band effect.
      * 
-     * @param event
-     *            invoked this method
+     * @param event indicates mouse was dragged
      */
     public void processMouseDrag(MouseEvent event) {
         currentLine.setEndX(event.getX());
@@ -75,8 +72,7 @@ public class RubberLines extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

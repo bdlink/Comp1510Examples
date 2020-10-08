@@ -17,8 +17,7 @@ public class Slogan {
     /**
      * Constructs the slogan and counts the number of instances created.
      * 
-     * @param str
-     *            the String used for the slogan
+     * @param str the String used for the slogan
      */
     public Slogan(String str) {
         phrase = str;

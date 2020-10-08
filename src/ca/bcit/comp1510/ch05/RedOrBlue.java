@@ -30,8 +30,7 @@ public class RedOrBlue extends Application {
      * Creates and presents a GUI with two buttons that control the color of the
      * pane background.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         redButton = new Button("Red!");
@@ -59,8 +58,7 @@ public class RedOrBlue extends Application {
     /**
      * Determines which button was pressed and sets the pane color accordingly..
      * 
-     * @param event
-     *            invoked this method
+     * @param event indicates a button was pressed
      */
     public void processColorButton(ActionEvent event) {
         if (event.getSource() == redButton) {

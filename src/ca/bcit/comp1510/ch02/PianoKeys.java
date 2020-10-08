@@ -12,8 +12,7 @@ public class PianoKeys {
     /**
      * Prints the number of keys on a piano.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         int keys = 88;

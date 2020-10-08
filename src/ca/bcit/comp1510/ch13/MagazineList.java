@@ -23,8 +23,7 @@ public class MagazineList {
      * Adds the specified Magazine to this MagazineList. Creates a new
      * MagazineNode object and adds it to the end of the linked list
      * 
-     * @param mag
-     *            The magazine to add.
+     * @param mag The magazine to add.
      */
     public void add(Magazine mag) {
         MagazineNode node = new MagazineNode(mag);

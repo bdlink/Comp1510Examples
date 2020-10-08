@@ -26,8 +26,7 @@ public class ComplexTester {
      * Creates some complex number objects and performs various operations on
      * them.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         Complex z1 = new Complex(TEST1R, TEST1I);
@@ -68,9 +67,8 @@ public class ComplexTester {
 
     }
 
-    /**
-     * Groups together error test cases.
-     */
+
+    // Groups together error test cases.
     private static void testErrorCases() {
         try {
             Complex.ZERO.reciprocal();
@@ -85,11 +83,8 @@ public class ComplexTester {
             System.out.println("Divide by zero test worked");
         }
     }
-    /**
-     * Test other Complex functions.
-     * @param z1 test value 1 
-     * @param z2 test value 2
-     */
+    
+    // Test other Complex functions.
     private static void testFunctions(Complex z1, Complex z2) {
         final double piDiv4 = Math.PI / 4.0;
         final Complex minusOne = Complex.ZERO.subtract(Complex.ONE);
@@ -102,7 +97,7 @@ public class ComplexTester {
                + "\narg(" + minusOne + ") = " + minusOne.arg() 
                + "\npi / 2 = " + Math.PI
                + "\nconjugate(" + z1 + ") = " + z1.conjugate()
-               );
+        );
     }
 }
 

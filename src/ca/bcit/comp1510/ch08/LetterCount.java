@@ -17,8 +17,7 @@ public class LetterCount {
      * Reads a sentence from the user and counts the number of uppercase and
      * lowercase letters contained in it.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
 
@@ -26,9 +25,12 @@ public class LetterCount {
 
         int[] upper = new int[NUMCHARS];
         int[] lower = new int[NUMCHARS];
-
-        char current; // the current character being processed
-        int other = 0; // counter for non-alphabetics
+        
+        // the current character being processed
+        char current;
+        
+        // counter for non-alphabetics
+        int other = 0;
 
         System.out.println("Enter a sentence:");
         String line = scan.nextLine();

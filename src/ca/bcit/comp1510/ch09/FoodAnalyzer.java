@@ -12,8 +12,7 @@ public class FoodAnalyzer {
     /**
      * Instantiates a Pizza object and prints its calories per serving.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command line arguments (unused)
      */
     public static void main(String[] args) {
         final int calories = 275;

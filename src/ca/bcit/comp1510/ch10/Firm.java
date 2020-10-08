@@ -11,8 +11,7 @@ public class Firm {
     /**
      * Creates a staff of employees for a firm and pays them.
      * 
-     * @param args
-     *            Unused
+     * @param args Unused
      */
     public static void main(String[] args) {
         Staff personnel = new Staff();

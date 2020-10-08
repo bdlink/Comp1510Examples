@@ -18,8 +18,7 @@ public class TilePaneDemo extends Application {
     /**
      * Creates the TilePane.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         Button b1 = new Button("Push Me!");
@@ -34,7 +33,7 @@ public class TilePaneDemo extends Application {
         pane.setHgap(10);
         pane.setVgap(5);
 
-        Scene scene = new Scene(pane, 300, 200);
+        final Scene scene = new Scene(pane, 300, 200);
 
         primaryStage.setTitle("Tile Pane Demo");
         primaryStage.setScene(scene);
@@ -44,8 +43,7 @@ public class TilePaneDemo extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

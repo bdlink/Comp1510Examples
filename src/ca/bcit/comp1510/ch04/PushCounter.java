@@ -34,7 +34,9 @@ public class PushCounter extends Application {
         countText = new Text("Pushes: 0");
 
         Button push = new Button("Push Me!");
-        push.setOnAction(this::processButtonPress); // Wow!
+        
+        // Easiest way to attach action method to button:
+        push.setOnAction(this::processButtonPress);
 
         FlowPane pane = new FlowPane(push, countText);
         pane.setAlignment(Pos.CENTER);
@@ -54,7 +56,7 @@ public class PushCounter extends Application {
 
     /**
      * Updates the counter and text when the button is pushed.
-     * @param event invokes this method
+     * @param event signals button was pressed
      */
     public void processButtonPress(ActionEvent event) {
         count++;

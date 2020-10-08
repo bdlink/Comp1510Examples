@@ -64,7 +64,7 @@ public class QuoteOptionsPane extends HBox {
         philosophyButton = new RadioButton("Philosophy");
         philosophyButton.setSelected(true);
         philosophyButton.setToggleGroup(group);
-        philosophyButton.setOnAction(this::processRadioButtonAction); // Neat!
+        philosophyButton.setOnAction(this::processRadioButtonAction);
 
         carpentryButton = new RadioButton("Carpentry");
         carpentryButton.setToggleGroup(group);

@@ -18,8 +18,7 @@ public class OutOfRangeException extends Exception {
     /**
      * Constructs an OutOfRangeException object with the specified message.
      * 
-     * @param message
-     *            Describes the exceptional situation
+     * @param message Describes the exceptional situation
      */
     OutOfRangeException(String message) {
         super(message);

@@ -30,16 +30,11 @@ public class Employee extends StaffMember {
     /**
      * Constructor creates an Employee object with the specified information.
      * 
-     * @param eName
-     *            employee name
-     * @param eAddress
-     *            employee address
-     * @param ePhone
-     *            employee phone
-     * @param socInNumber
-     *            social insurance number
-     * @param rate
-     *            pay rate
+     * @param eName employee name
+     * @param eAddress employee address
+     * @param ePhone employee phone
+     * @param socInNumber social insurance number
+     * @param rate pay rate
      */
     public Employee(String eName,
                     String eAddress, 
@@ -87,8 +82,7 @@ public class Employee extends StaffMember {
      * Reads instance data from scanner. Subclasses that add instance data
      * should override to read additional data.
      * 
-     * @param scan
-     *            Should be positioned before the instance data. Each field
+     * @param scan Should be positioned before the instance data. Each field
      *            should be a token.
      */
     public void readInstanceData(Scanner scan) {

@@ -30,8 +30,7 @@ public class BorderPaneDemo extends Application {
     /**
      * Creates the BorderPane.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         Text title = new Text("Image Viewer");
@@ -42,7 +41,7 @@ public class BorderPaneDemo extends Application {
 
         ImageView imageView = new ImageView(new Image("tiger.jpg"));
 
-        Rectangle rect = new Rectangle(350, 300, null);
+        final Rectangle rect = new Rectangle(350, 300, null);
         rect.setStroke(Color.ORANGE);
         rect.setStrokeWidth(6);
 
@@ -89,8 +88,7 @@ public class BorderPaneDemo extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

@@ -19,7 +19,7 @@ public class Stars {
         for (int row = 1; row <= maxRows; row++) {
             for (int star = 1; star <= row; star++) {
                 System.out.print("*");
-            } // Pay attention to the closing braces!
+            }
             System.out.println();
         }
     }

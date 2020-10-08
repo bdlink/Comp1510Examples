@@ -15,8 +15,7 @@ public class CircleStats {
     /**
      * Calculates the area and circumference of a circle given its radius.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         int radius;

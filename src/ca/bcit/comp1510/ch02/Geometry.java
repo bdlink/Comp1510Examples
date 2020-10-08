@@ -13,8 +13,7 @@ public class Geometry {
     /**
      * Prints the number of sides of several geometric shapes.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
 

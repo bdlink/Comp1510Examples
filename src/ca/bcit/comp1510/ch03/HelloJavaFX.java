@@ -19,15 +19,14 @@ public class HelloJavaFX extends Application {
     /**
      * Creates and displays two Text objects in a JavFX Window.
      * 
-     * @param primaryStage
-     *            contains the Scene
+     * @param primaryStage contains the Scene
      */
     public void start(Stage primaryStage) {
-        Text hello = new Text(50, 50, "Hello, JavaFX!");
-        Text question = new Text(120, 80, "How's it going?");
+        final Text hello = new Text(50, 50, "Hello, JavaFX!");
+        final Text question = new Text(120, 80, "How's it going?");
 
-        Group root = new Group(hello, question);
-        Scene scene = new Scene(root, 300, 120, Color.LIGHTGREEN);
+        final Group root = new Group(hello, question);
+        final Scene scene = new Scene(root, 300, 120, Color.LIGHTGREEN);
 
         primaryStage.setTitle("A JavaFX Program");
         primaryStage.setScene(scene);
@@ -37,8 +36,7 @@ public class HelloJavaFX extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

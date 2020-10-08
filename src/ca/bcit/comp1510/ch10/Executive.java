@@ -22,16 +22,11 @@ public class Executive extends Employee {
     /**
      * Constructors a new Executive object with the specified information.
      * 
-     * @param eName
-     *            employee name
-     * @param eAddress
-     *            employee address
-     * @param ePhone
-     *            employee phone
-     * @param socInNumber
-     *            social insurance number
-     * @param rate
-     *            pay rate
+     * @param eName employee name
+     * @param eAddress employee address
+     * @param ePhone employee phone
+     * @param socInNumber social insurance number
+     * @param rate pay rate
      */
     public Executive(String eName,
                      String eAddress,
@@ -44,8 +39,7 @@ public class Executive extends Employee {
     /**
      * Awards the specified bonus to this executive.
      * 
-     * @param execBonus
-     *            Amount of bonus
+     * @param execBonus Amount of bonus
      */
     public void awardBonus(double execBonus) {
         bonus = execBonus;

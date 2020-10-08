@@ -14,8 +14,7 @@ public class GratefulDead {
     /**
      * Stores and modifies a list of band members.
      * 
-     * @param args
-     *            Unused
+     * @param args Unused
      */
     public static void main(String[] args) {
         List<String> band = new ArrayList<String>();

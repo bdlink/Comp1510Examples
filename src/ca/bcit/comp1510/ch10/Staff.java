@@ -86,7 +86,8 @@ public class Staff {
         for (StaffMember staff : staffList) {
             System.out.println(staff);
 
-            amount = staff.pay(); // polymorphic
+            // polymorphic:
+            amount = staff.pay();
 
             if (amount == 0.0) {
                 System.out.println("Thanks!");

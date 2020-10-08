@@ -27,8 +27,7 @@ public class PushCounter3 extends Application {
      * Presents a GUI containing a button and text that displays how many times
      * the button is pushed.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
 
@@ -36,7 +35,9 @@ public class PushCounter3 extends Application {
         countText = new Text("Pushes: 0");
 
         Button push = new Button("Push Me!");
-        push.setOnAction((event) -> { // Wow, a lambda expression!
+        
+        // Passes lambda expression, a method to handle event
+        push.setOnAction((event) -> {
             count++;
             countText.setText("Pushes: " + count);
         });
@@ -60,8 +61,7 @@ public class PushCounter3 extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

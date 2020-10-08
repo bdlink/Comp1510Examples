@@ -22,12 +22,9 @@ public class RationalNumber2 {
      * Constructs a RationalNumber2. Ensures a nonzero denominator and stores
      * the sign in the numerator
      * 
-     * @param numer
-     *            Raw numerator of rational number
-     * @param denom
-     *            Raw denominator of rational number
-     * @throws IllegalArgumentException
-     *             If denom is zero
+     * @param numer Raw numerator of rational number
+     * @param denom Raw denominator of rational number
+     * @throws IllegalArgumentException if denom is zero
      */
     public RationalNumber2(int numer, int denom) {
         if (denom == 0) {
@@ -68,8 +65,7 @@ public class RationalNumber2 {
      * Returns the reciprocal of this rational number.
      * 
      * @return reciprocal RationalNumber
-     * @throws IllegalArgumentException
-     *             If this component is zero /
+     * @throws IllegalArgumentException if this component is zero
      */
     public RationalNumber2 reciprocal() {
         if (numerator == 0) {
@@ -84,8 +80,7 @@ public class RationalNumber2 {
      * Adds this rational number to the one passed as a parameter. A common
      * denominator is found by multiplying the individual denominators.
      * 
-     * @param op2
-     *            The value to add to this
+     * @param op2 The value to add to this
      * @return The sum of this + op2
      */
     public RationalNumber2 add(RationalNumber2 op2) {
@@ -101,8 +96,7 @@ public class RationalNumber2 {
      * Subtracts the rational number passed as a parameter from this rational
      * number.
      * 
-     * @param op2
-     *            The value to subtract from this
+     * @param op2 The value to subtract from this
      * @return The difference of this - op2
      */
     public RationalNumber2 subtract(RationalNumber2 op2) {
@@ -117,8 +111,7 @@ public class RationalNumber2 {
     /**
      * Multiplies this rational number by the one passed as a parameter.
      * 
-     * @param op2
-     *            The value to multiply to this
+     * @param op2 The value to multiply to this
      * @return The product of this * op2
      */
     public RationalNumber2 multiply(RationalNumber2 op2) {
@@ -132,11 +125,9 @@ public class RationalNumber2 {
      * Divides this rational number by the one passed as a parameter by
      * multiplying by the reciprocal of the second rational.
      * 
-     * @param op2
-     *            The value to divide into this
+     * @param op2 The value to divide into this
      * @return The quotient of this / op2
-     * @throws IllegalArgumentException
-     *             If op2 is zero
+     * @throws IllegalArgumentException if op2 is zero
      */
     public RationalNumber2 divide(RationalNumber2 op2) {
         if (op2.equals(ZERO)) {
@@ -149,8 +140,7 @@ public class RationalNumber2 {
      * Determines if this rational number is equal to the one passed as a
      * parameter. Assumes they are both reduced.
      * 
-     * @param op2
-     *            The value to compare to this
+     * @param op2 The value to compare to this
      * @return true if this is equal to op2 numerically
      */
     public boolean equals(Object op2) {
@@ -189,10 +179,9 @@ public class RationalNumber2 {
         return result;
     }
 
-    /**
-     * Reduces this rational number by dividing both the numerator and the
-     * denominator by their greatest common divisor.
-     */
+
+    // Reduces this rational number by dividing both the numerator and the
+    // denominator by their greatest common divisor.
     private void reduce() {
         if (numerator != 0) {
             int common = gcd(Math.abs(numerator), denominator);
@@ -204,7 +193,7 @@ public class RationalNumber2 {
         }
     }
 
-    /**
+    /*
      * Computes and returns the greatest common divisor of the two positive
      * parameters. Uses Euclid's algorithm.
      * 

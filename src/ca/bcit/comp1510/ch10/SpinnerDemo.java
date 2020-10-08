@@ -36,8 +36,7 @@ public class SpinnerDemo extends Application {
      * Presents an integer spinner and a string spinner, updating some
      * text when either value changes.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         final int maxSpinnerValue = 10;
@@ -81,8 +80,7 @@ public class SpinnerDemo extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

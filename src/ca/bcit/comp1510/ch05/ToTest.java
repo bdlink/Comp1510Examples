@@ -27,9 +27,10 @@ public class ToTest {
         }
         return max;
     }
+    
     /** 
      * Return the largest value in the parameters.
-     * @param a List of integers (use ArrayList<Integer> in test)
+     * @param a List of integers
      * @return largest of numbers in List
      */
     public int largest(List<Integer> a) {

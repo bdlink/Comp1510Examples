@@ -40,8 +40,7 @@ public class DrawComplexAddition extends Application {
      * Displays an initially empty scene, waiting for the user to draw lines
      * with the mouse.
      * 
-     * @param primaryStage
-     *            a Stage
+     * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
         root = new Group();
@@ -62,9 +61,8 @@ public class DrawComplexAddition extends Application {
         addAxis(scene);
         
         addCircles(scene, scale, maxMag);
-        /* 
-         * calculate starting point to be nth root of 2
-         */
+ 
+        //calculate starting point to be nth root of 2
         scene.setOnMouseClicked(this::processMouseClick);
 
         primaryStage.setTitle("Draw Spiral with Complex");
@@ -106,8 +104,7 @@ public class DrawComplexAddition extends Application {
     /**
      * Adds a new line to the scene when the mouse button is pressed.
      * 
-     * @param event
-     *            invoked this method
+     * @param event indicates mouse was clicked
      */
     public void processMouseClick(MouseEvent event) {
         double x = event.getX();
@@ -154,8 +151,7 @@ public class DrawComplexAddition extends Application {
     /**
      * Launches the JavaFX application.
      * 
-     * @param args
-     *            command line arguments
+     * @param args command-line arguments
      */
     public static void main(String[] args) {
         launch(args);

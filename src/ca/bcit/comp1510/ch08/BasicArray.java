@@ -25,8 +25,7 @@ public class BasicArray {
      * Creates an array, fills it with various integer values, modifies one
      * value, then prints them out.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
 

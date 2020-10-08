@@ -16,7 +16,7 @@ public class Guessing {
 
     /**
      * Plays a simple guessing game with the user.
-     * @param args command line argument (unused)
+     * @param args command-line argument (unused)
      */
     public static void main(String[] args) {
         int answer;

@@ -11,8 +11,7 @@ public class Wedge {
     /**
      * Prints a wedge shape using asterisk (star) characters.
      * 
-     * @param args
-     *            Unused
+     * @param args Unused
      */
     public static void main(String[] args) {
         final int maxRows = 10;

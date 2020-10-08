@@ -18,8 +18,7 @@ public class ReverseOrder {
      * Scans a list of numbers from the user, storing them in an array, and then
      * prints them in the opposite order.
      * 
-     * @param args
-     *            command line arguments (unused)
+     * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
 
