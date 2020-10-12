@@ -99,12 +99,12 @@ public class LightBulb extends Application {
     public void processButtonPress(ActionEvent event) {
         if (event.getSource() == onButton) {
             bulbView.setViewport(
-                    new Rectangle2D(ON, 0, VIEW_WIDTH, VIEW_HEIGHT)); // on
+                    new Rectangle2D(ON, 0, VIEW_WIDTH, VIEW_HEIGHT));
             onButton.setDisable(true);
             offButton.setDisable(false);
         } else {
             bulbView.setViewport(
-                    new Rectangle2D(OFF, 0, VIEW_WIDTH, VIEW_HEIGHT)); // off
+                    new Rectangle2D(OFF, 0, VIEW_WIDTH, VIEW_HEIGHT));
             offButton.setDisable(true);
             onButton.setDisable(false);
         }

@@ -36,7 +36,7 @@ public class Coin {
      * @return true if current face is heads, else false.
      */
     public boolean isHeads() {
-        return (face == HEADS);
+        return face == HEADS;
     }
 
     /**

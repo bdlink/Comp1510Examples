@@ -1,7 +1,5 @@
 package ca.bcit.comp1510.ch06;
 
-import java.io.File;
-
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -36,29 +34,33 @@ public class TransformationDemo extends Application {
 
         final Rectangle rec2 = new Rectangle(100, 100, 200, 50);
         rec2.setFill(Color.ORANGE);
-        rec2.setTranslateX(70);
-        rec2.setTranslateY(10);
+        
+        final int moveX = 70;
+        final int moveY = 10;
+        rec2.setTranslateX(moveX);
+        rec2.setTranslateY(moveY);
 
         // SCALING
-        Image img = new Image("water lily.jpg");
-        ImageView imgView = new ImageView(img);
-        imgView.setX(100);
-        imgView.setScaleX(0.7);
-        imgView.setScaleY(0.7);
+        ImageView imgView = waterLily();
 
         // ROTATION
         final Rectangle rec = new Rectangle(50, 100, 200, 50);
         rec.setFill(Color.STEELBLUE);
-        rec.setRotate(40);
+        final int rectAngle = 40;
+        rec.setRotate(rectAngle);
         
         final Text text = new Text(270, 125, "Tilted Text!");
-        text.setFont(new Font("Courier", 24));
-        text.setRotate(-15);
+        final int textSize = 24;
+        text.setFont(new Font("Courier", textSize));
+        final double textAngle = -15;
+        text.setRotate(textAngle);
+        
 
         // SHEARING
         Image img2 = new Image("duck.jpg");
         ImageView imgView2 = new ImageView(img2);
-        imgView2.getTransforms().add(new Shear(0.4, 0.2));
+        final Shear duckShear = new Shear(0.4, 0.2);
+        imgView2.getTransforms().add(duckShear);
 
         // Add and remove from root to observe changes
         Group root = new Group(rec1, rec2, imgView, rec, text, imgView2);
@@ -69,6 +71,17 @@ public class TransformationDemo extends Application {
         primaryStage.setTitle("Transformation Demo");
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+    
+    private ImageView waterLily() {
+        Image img = new Image("water lily.jpg");
+        ImageView imgView = new ImageView(img);
+        final int lilyX = 100;
+        final double lilyScale = 0.7;
+        imgView.setX(lilyX);
+        imgView.setScaleX(lilyScale);
+        imgView.setScaleY(lilyScale);
+        return imgView;
     }
 
     /**

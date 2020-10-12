@@ -10,6 +10,10 @@ import java.util.Random;
  */
 public class IncomeExchangeSimulation {
     
+    /**
+     * Run the simulation.
+     * @param args unused.
+     */
     public static void main(String[] args) {
         final long iterations = 100000;
         final var population = 100;
@@ -30,9 +34,11 @@ public class IncomeExchangeSimulation {
             }
         }
         Arrays.sort(person);
-        for (int i = 0; i < person.length; i++) {
+        
+        final int perLine = 10;
+        for (int i = 1; i <= person.length; i++) {
             System.out.print(person[i] + "\t");
-            if (i % 10 == 9) {
+            if (i % perLine == 0) {
                 System.out.println();
             }
         }

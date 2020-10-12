@@ -32,6 +32,10 @@ public class KochPane extends Pane {
      */
     public void makeFractal(int order) {
         getChildren().clear();
+        final int x1 = 200;
+        final int y1 = 20;
+        final int x2 = 60;
+        final int y2 = 300;
         addLine(order, 200, 20, 60, 300);
         addLine(order, 60, 300, 340, 300);
         addLine(order, 340, 300, 200, 20);

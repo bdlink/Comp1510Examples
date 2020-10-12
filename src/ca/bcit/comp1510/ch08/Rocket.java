@@ -38,9 +38,9 @@ public class Rocket extends Application {
         hatch.setFill(Color.MAROON);
 
         final double[] flamePoints = {142, 310, 142, 330, 150, 325, 155,
-                380, 165, 340, 175, 360, 190, 350, 200, 375, 215, 330,
-                220, 360, 225, 355, 230, 370, 240, 340, 255, 370, 260,
-                335, 268, 340, 268, 310 };
+            380, 165, 340, 175, 360, 190, 350, 200, 375, 215, 330,
+            220, 360, 225, 355, 230, 370, 240, 340, 255, 370, 260,
+            335, 268, 340, 268, 310 };
 
         Polyline flame = new Polyline(flamePoints);
         flame.setStroke(Color.RED);

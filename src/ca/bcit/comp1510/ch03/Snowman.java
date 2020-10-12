@@ -42,22 +42,40 @@ public class Snowman extends Application {
         final Circle bottomButton = new Circle(80, 140, 6);
         bottomButton.setFill(Color.RED);
 
+        final int armThickness = 3;
         final Line leftArm = new Line(110, 130, 160, 130);
-        leftArm.setStrokeWidth(3);
+        leftArm.setStrokeWidth(armThickness);
         final Line rightArm = new Line(50, 130, 0, 100);
-        rightArm.setStrokeWidth(3);
+        rightArm.setStrokeWidth(armThickness);
 
-        final Rectangle stovepipe = new Rectangle(60, 0, 40, 50);
-        final Rectangle brim = new Rectangle(50, 45, 60, 5);
-        Group hat = new Group(stovepipe, brim);
-        hat.setTranslateX(10);
-        hat.setRotate(15);
+        Group hat = makeHat();
 
         Group snowman = new Group(base, middle, head, leftEye, rightEye, mouth,
                 topButton, bottomButton, leftArm, rightArm, hat);
-        snowman.setTranslateX(170);
-        snowman.setTranslateY(50);
+        final int moveSnowmanX = 170;
+        final int moveSnowmanY = 50;
+        snowman.setTranslateX(moveSnowmanX);
+        snowman.setTranslateY(moveSnowmanY);
 
+        final Scene scene = addBackground(snowman);
+
+        primaryStage.setTitle("Snowman");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+    
+    private Group makeHat() {
+        final Rectangle stovepipe = new Rectangle(60, 0, 40, 50);
+        final Rectangle brim = new Rectangle(50, 45, 60, 5);
+        Group hat = new Group(stovepipe, brim);
+        final int moveHatX = 10;
+        hat.setTranslateX(moveHatX);
+        final double hatAngle = 15;
+        hat.setRotate(hatAngle);
+        return hat;
+    }
+    
+    private Scene addBackground(Group snowman) {
         final Circle sun = new Circle(50, 50, 30);
         sun.setFill(Color.GOLD);
 
@@ -66,10 +84,7 @@ public class Snowman extends Application {
 
         Group root = new Group(ground, sun, snowman);
         final Scene scene = new Scene(root, 500, 350, Color.LIGHTBLUE);
-
-        primaryStage.setTitle("Snowman");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        return scene;
     }
 
     /**

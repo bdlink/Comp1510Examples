@@ -32,7 +32,8 @@ public class Movies {
         while (scan.hasNextLine()) {
             movies.addDVD(scan.nextLine(), scan.nextLine(), scan.nextInt(),
                     scan.nextDouble(), scan.nextBoolean());
-            scan.nextLine();   //advance past end of line after reading boolean
+            //advance past end of line after reading boolean
+            scan.nextLine();
         }
 
         System.out.println(movies);

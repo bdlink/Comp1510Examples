@@ -21,19 +21,27 @@ public class Robots extends Application {
      */
     public void start(Stage primaryStage) {
         RobotFace robot1 = new RobotFace();
-        robot1.setTranslateX(70);
-        robot1.setTranslateY(40);
+        final int robot1X = 70;
+        final int robot1Y = 40;
+        robot1.setTranslateX(robot1X);
+        robot1.setTranslateY(robot1Y);
 
         RobotFace robot2 = new RobotFace();
-        robot2.setTranslateX(300);
-        robot2.setTranslateY(40);
-        robot2.setRotate(20);
+        final int robot2X = 300;
+        final int robot2Y = 40;
+        robot2.setTranslateX(robot2X);
+        robot2.setTranslateY(robot2Y);
+        final double robot2Angle = 20;
+        robot2.setRotate(robot2Angle);
 
         RobotFace robot3 = new RobotFace();
-        robot3.setTranslateX(200);
-        robot3.setTranslateY(200);
-        robot3.setScaleX(2.5);
-        robot3.setScaleY(2.5);
+        final int robot3X = 200;
+        final int robot3Y = 200;
+        robot3.setTranslateX(robot3X);
+        robot3.setTranslateY(robot3Y);
+        final double robot3Scale = 2.5;
+        robot3.setScaleX(robot3Scale);
+        robot3.setScaleY(robot3Scale);
 
         Group root = new Group(robot1, robot2, robot3);
 

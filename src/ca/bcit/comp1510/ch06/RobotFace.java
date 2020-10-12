@@ -18,15 +18,17 @@ public class RobotFace extends Group {
      * upper left corner of the coordinate system.
      */
     public RobotFace() {
+        final int arcSize = 10;
+        
         final Rectangle head = new Rectangle(5, 0, 100, 70);
         head.setFill(Color.SILVER);
-        head.setArcHeight(10);
-        head.setArcWidth(10);
+        head.setArcHeight(arcSize);
+        head.setArcWidth(arcSize);
 
         final Rectangle ears = new Rectangle(0, 20, 110, 30);
         ears.setFill(Color.DARKBLUE);
-        ears.setArcHeight(10);
-        ears.setArcWidth(10);
+        ears.setArcHeight(arcSize);
+        ears.setArcWidth(arcSize);
 
         final Rectangle eye1 = new Rectangle(25, 15, 20, 10);
         eye1.setFill(Color.GOLD);
