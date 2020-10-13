@@ -36,9 +36,12 @@ public class KochPane extends Pane {
         final int y1 = 20;
         final int x2 = 60;
         final int y2 = 300;
-        addLine(order, 200, 20, 60, 300);
-        addLine(order, 60, 300, 340, 300);
-        addLine(order, 340, 300, 200, 20);
+        addLine(order, x1, y1, x2, y2);
+        
+        final int x3 = 340;
+        final int y3 = 300;
+        addLine(order, x2, y2, x3, y3);
+        addLine(order, x3, y3, x1, y1);
     }
     
     /**

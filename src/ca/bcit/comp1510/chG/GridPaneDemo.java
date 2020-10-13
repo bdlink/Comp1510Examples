@@ -27,22 +27,21 @@ public class GridPaneDemo extends Application {
      * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
-        GridPane gridPane = new GridPane();
-        gridPane.setStyle("-fx-background-color: lemonchiffon");
-        gridPane.setAlignment(Pos.CENTER);
-        gridPane.setHgap(20);
-        gridPane.setVgap(10);
-        // gridPane.setGridLinesVisible(true);
+        GridPane gridPane = initializeGridPane();
 
         ImageView logo = new ImageView(new Image("mascot.png"));
-        gridPane.add(logo, 0, 0, 1, 3);
+        final int oneSpanX = 1;
+        final int threeSpanY = 3;
+        gridPane.add(logo, 0, 0, oneSpanX, threeSpanY);
 
         Text title = new Text("Welcome to Emotiful!");
-        title.setFont(new Font(24));
+        final int titleFont = 24;
+        title.setFont(new Font(titleFont));
         gridPane.add(title, 1, 0, 2, 1);
 
         Label userLabel = new Label("User name:");
-        userLabel.setFont(new Font(18));
+        final int labelFont = 18;
+        userLabel.setFont(new Font(labelFont));
         GridPane.setHalignment(userLabel, HPos.RIGHT);
         gridPane.add(userLabel, 1, 1);
 
@@ -50,25 +49,46 @@ public class GridPaneDemo extends Application {
         gridPane.add(userName, 2, 1);
 
         Label pwLabel = new Label("Password:");
-        pwLabel.setFont(new Font(18));
+        pwLabel.setFont(new Font(labelFont));
         GridPane.setHalignment(pwLabel, HPos.RIGHT);
         gridPane.add(pwLabel, 1, 2);
 
         TextField password = new TextField();
         gridPane.add(password, 2, 2);
 
-        Text greeting = new Text("Have an emotiful day!");
-        greeting.setFont(new Font(18));
-        GridPane.setHalignment(greeting, HPos.CENTER);
-        gridPane.add(greeting, 0, 3, 3, 1);
-
-        final Scene scene = new Scene(gridPane, 550, 250);
+        addGreeting(gridPane, labelFont);
+        
+        final int width = 550;
+        final int height = 250;
+        final Scene scene = new Scene(gridPane, width, height);
 
         primaryStage.setTitle("Grid Pane Demo");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
+    private GridPane initializeGridPane() {
+        GridPane gridPane = new GridPane();
+        gridPane.setStyle("-fx-background-color: lemonchiffon");
+        gridPane.setAlignment(Pos.CENTER);
+        final int hGap = 20;
+        final int vGap = 10;
+        gridPane.setHgap(hGap);
+        gridPane.setVgap(vGap);
+        // gridPane.setGridLinesVisible(true);
+        return gridPane;
+    }
+    
+    private void addGreeting(GridPane gridPane, int labelFont) {
+        Text greeting = new Text("Have an emotiful day!");
+        greeting.setFont(new Font(labelFont));
+        GridPane.setHalignment(greeting, HPos.CENTER);
+        final int fourDown = 3;
+        final int threeSpanX = 3;
+        final int oneSpanY = 1;
+        gridPane.add(greeting, 0, fourDown, threeSpanX, oneSpanY);        
+    }
+    
     /**
      * Launches the JavaFX application.
      * 

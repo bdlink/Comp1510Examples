@@ -30,8 +30,10 @@ public class TilePaneDemo extends Application {
         TilePane pane = new TilePane(b1, b2, b3, b4, b5);
         pane.setStyle("-fx-background-color: cyan");
         pane.setAlignment(Pos.CENTER_LEFT);
-        pane.setHgap(10);
-        pane.setVgap(5);
+        final int hGap = 10;
+        final int vGap = 5;
+        pane.setHgap(hGap);
+        pane.setVgap(vGap);
 
         final Scene scene = new Scene(pane, 300, 200);
 

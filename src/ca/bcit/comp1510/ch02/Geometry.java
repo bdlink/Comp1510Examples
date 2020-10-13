@@ -16,11 +16,12 @@ public class Geometry {
      * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
-
-        var sides = 7; // declaration with initialization
+        // declaration with initialization
+        var sides = 7;
         System.out.println("A heptagon has " + sides + " sides.");
-
-        sides = 10; // assignment statement
+        
+        // assignment statement
+        sides = 10;
         System.out.println("A decagon has " + sides + " sides.");
 
         sides = 12;

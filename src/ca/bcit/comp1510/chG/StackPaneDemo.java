@@ -28,7 +28,8 @@ public class StackPaneDemo extends Application {
 
         final Rectangle rect = new Rectangle(350, 300, null);
         rect.setStroke(Color.ORANGE);
-        rect.setStrokeWidth(6);
+        final int rectThick = 6;
+        rect.setStrokeWidth(rectThick);
 
         StackPane imagePane = new StackPane(imageView, rect);
         imagePane.setStyle("-fx-background-color: beige");

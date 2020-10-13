@@ -6,6 +6,7 @@ module ca.bcit.comp1510.examples {
 	requires org.junit.jupiter.api;
 	requires org.junit.platform.runner;
     requires javafx.base;
+    requires org.junit.jupiter.params;
 	
 	opens ca.bcit.comp1510.ch03 to javafx.fxml;
 	exports ca.bcit.comp1510.ch03;

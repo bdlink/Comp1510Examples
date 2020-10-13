@@ -26,12 +26,16 @@ public class AnchorPaneDemo extends Application {
 
         AnchorPane navPane = new AnchorPane(prev, next);
         navPane.setStyle("-fx-background-color: black");
-        navPane.setPrefHeight(70);
+        final int navPaneHeight = 70;
+        navPane.setPrefHeight(navPaneHeight);
 
-        AnchorPane.setBottomAnchor(prev, 20.0);
-        AnchorPane.setLeftAnchor(prev, 30.0);
-        AnchorPane.setBottomAnchor(next, 20.0);
-        AnchorPane.setRightAnchor(next, 30.0);
+        final double offsetFromBottom = 20.0;
+        final double offsetFromLeft = 30.0;
+        final double offsetFromRight = 30.0;
+        AnchorPane.setBottomAnchor(prev, offsetFromBottom);
+        AnchorPane.setLeftAnchor(prev, offsetFromLeft);
+        AnchorPane.setBottomAnchor(next, offsetFromBottom);
+        AnchorPane.setRightAnchor(next, offsetFromRight);
 
         final Scene scene = new Scene(navPane, 500, 400);
 

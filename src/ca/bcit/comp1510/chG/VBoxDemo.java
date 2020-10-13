@@ -35,8 +35,10 @@ public class VBoxDemo extends Application {
 
         VBox colorControls = new VBox(sepiaButton, monoButton, colorButton, sep, colorLabel, colorPicker);
         colorControls.setStyle("-fx-background-color: skyblue");
-        colorControls.setPadding(new Insets(20, 10, 20, 10));
-        colorControls.setSpacing(10);
+        final Insets insets = new Insets(20, 10, 20, 10);
+        colorControls.setPadding(insets);
+        final int spacing = 10;
+        colorControls.setSpacing(spacing);
 
         final Scene scene = new Scene(colorControls, 600, 500);
 

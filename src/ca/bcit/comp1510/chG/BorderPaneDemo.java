@@ -33,17 +33,14 @@ public class BorderPaneDemo extends Application {
      * @param primaryStage a Stage
      */
     public void start(Stage primaryStage) {
-        Text title = new Text("Image Viewer");
-        title.setFont(Font.font(24));
-        title.setFill(Color.YELLOW);
-        StackPane titlePane = new StackPane(title);
-        titlePane.setStyle("-fx-padding: 20px; -fx-background-color: black");
+        StackPane titlePane = buildTitlePane();
 
         ImageView imageView = new ImageView(new Image("tiger.jpg"));
 
         final Rectangle rect = new Rectangle(350, 300, null);
         rect.setStroke(Color.ORANGE);
-        rect.setStrokeWidth(6);
+        final int rectThick = 6;
+        rect.setStrokeWidth(rectThick);
 
         StackPane imagePane = new StackPane(imageView, rect);
         imagePane.setStyle("-fx-background-color: beige");
@@ -58,19 +55,10 @@ public class BorderPaneDemo extends Application {
 
         VBox colorControls = new VBox(sepiaButton, monoButton, colorButton, sep, colorLabel, colorPicker);
         colorControls.setStyle("-fx-padding: 20px 10px; " + "-fx-background-color: skyblue");
-        colorControls.setSpacing(10);
+        final int spacing = 10;
+        colorControls.setSpacing(spacing);
 
-        Button prev = new Button("Prev");
-        Button next = new Button("Next");
-
-        AnchorPane navPane = new AnchorPane(prev, next);
-        navPane.setStyle("-fx-background-color: black");
-        navPane.setPrefHeight(70);
-
-        AnchorPane.setBottomAnchor(prev, 20.0);
-        AnchorPane.setLeftAnchor(prev, 30.0);
-        AnchorPane.setBottomAnchor(next, 20.0);
-        AnchorPane.setRightAnchor(next, 30.0);
+        AnchorPane navPane = buildAnchorPane();
 
         BorderPane borderPane = new BorderPane();
         borderPane.setTop(titlePane);
@@ -78,11 +66,44 @@ public class BorderPaneDemo extends Application {
         borderPane.setCenter(imagePane);
         borderPane.setBottom(navPane);
 
-        Scene scene = new Scene(borderPane, 600, 500);
+        final int sceneWidth = 600;
+        final int sceneHeight = 500;
+        Scene scene = new Scene(borderPane, sceneWidth, sceneHeight);
 
         primaryStage.setTitle("Border Pane Demo");
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+    
+    private StackPane buildTitlePane() {
+        Text title = new Text("Image Viewer");
+        final int fontSize = 24;
+        title.setFont(Font.font(fontSize));
+        title.setFill(Color.YELLOW);
+        StackPane titlePane = new StackPane(title);
+        titlePane.setStyle("-fx-padding: 20px; -fx-background-color: black");
+
+        return titlePane;
+    }
+    
+    private AnchorPane buildAnchorPane() {
+        Button prev = new Button("Prev");
+        Button next = new Button("Next");
+
+        AnchorPane navPane = new AnchorPane(prev, next);
+        navPane.setStyle("-fx-background-color: black");
+        final int navPaneHeight = 70;
+        navPane.setPrefHeight(navPaneHeight);
+
+        final double offsetFromBottom = 20.0;
+        final double offsetFromLeft = 30.0;
+        final double offsetFromRight = 30.0;
+        AnchorPane.setBottomAnchor(prev, offsetFromBottom);
+        AnchorPane.setLeftAnchor(prev, offsetFromLeft);
+        AnchorPane.setBottomAnchor(next, offsetFromBottom);
+        AnchorPane.setRightAnchor(next, offsetFromRight);
+      
+        return navPane;
     }
 
     /**
