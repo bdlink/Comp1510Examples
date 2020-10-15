@@ -5,7 +5,7 @@
     This configuration file was written by the eclipse-cs plugin configuration editor
 -->
 <!--
-    Checkstyle-Configuration: Comp 1510 checkstyle
+    Checkstyle-Configuration: Comp1510 checkstyle
     Description: none
 -->
 <module name="Checker">
@@ -67,7 +67,9 @@
     <module name="SimplifyBooleanReturn"/>
     <module name="FinalClass"/>
     <module name="InterfaceIsType"/>
-    <module name="VisibilityModifier"/>
+    <module name="VisibilityModifier">
+      <property name="allowPublicFinalFields" value="true"/>
+    </module>
     <module name="ArrayTypeStyle"/>
     <module name="TodoComment"/>
     <module name="UpperEll"/>
@@ -108,10 +110,6 @@
     <module name="SeparatorWrap"/>
     <module name="NoEnumTrailingComma"/>
     <module name="TrailingComment"/>
-    <module name="VisibilityModifier">
-      <property name="allowPublicFinalFields" value="true"/>
-      <property name="allowPublicImmutableFields" value="true"/>
-    </module>
   </module>
   <module name="RegexpSingleline">
     <property name="severity" value="ignore"/>
@@ -127,4 +125,25 @@
     <property name="fileNamePattern" value="module\-info\.java$"/>
   </module>
   <module name="LineLength"/>
+  <module name="BeforeExecutionExclusionFileFilter">
+    <property name="fileNamePattern" value=".*\.jpg"/>
+  </module>
+  <module name="BeforeExecutionExclusionFileFilter">
+    <property name="fileNamePattern" value=".*\.png"/>
+  </module>
+  <module name="BeforeExecutionExclusionFileFilter">
+    <property name="fileNamePattern" value=".*\.wav"/>
+  </module>
+  <module name="BeforeExecutionExclusionFileFilter">
+    <property name="fileNamePattern" value=".*\.mp3"/>
+  </module>
+  <module name="BeforeExecutionExclusionFileFilter">
+    <property name="fileNamePattern" value=".*\.gif"/>
+  </module>
+  <module name="BeforeExecutionExclusionFileFilter">
+    <property name="fileNamePattern" value=".*\.txt"/>
+  </module>
+  <module name="BeforeExecutionExclusionFileFilter">
+    <property name="fileNamePattern" value=".*\.inp"/>
+  </module>
 </module>

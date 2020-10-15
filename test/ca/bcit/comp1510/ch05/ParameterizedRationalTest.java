@@ -24,7 +24,8 @@ public class ParameterizedRationalTest {
      */
     @ParameterizedTest
     @CsvSource({"1, 1, 1, 1", "3, 2, 6, 4", "7, 3, 49, 21", "23, 1, 23, 0"})
-    public void creationTest(int expectedOne, int expectedTwo, int valueOne, int valueTwo) {
+    public void creationTest(int expectedOne, int expectedTwo, int valueOne,
+            int valueTwo) {
         Rational r = new Rational(valueOne, valueTwo);
         assertEquals(expectedOne, r.getNumerator());
         assertEquals(expectedTwo, r.getDenominator());

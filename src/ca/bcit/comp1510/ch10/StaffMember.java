@@ -7,7 +7,7 @@ import java.util.Scanner;
  * member, so subclasses will have to provide the pay method.
  *
  * @author Lewis & Loftus 9e
- * @author BCIT
+ * @author Bruce Link
  * @version 2017
  */
 public abstract class StaffMember {

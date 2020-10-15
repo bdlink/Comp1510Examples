@@ -2,6 +2,7 @@ package ca.bcit.comp1510.ch10;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -10,7 +11,7 @@ import java.util.Scanner;
  * Represents the personnel staff of a particular business.
  *
  * @author Lewis & Loftus 9e
- * @author BCIT
+ * @author Bruce Link
  * @version 2017
  */
 public class Staff {
@@ -46,7 +47,8 @@ public class Staff {
             try {
                 // create instance of staff member's class
                 nextStaff =
-                        (StaffMember) Class.forName(className).newInstance();
+                        (StaffMember) Class.forName(className).
+                            getDeclaredConstructor().newInstance();
 
                 // The instance initializes itself from the file
                 nextStaff.readInstanceData(scan);
@@ -62,6 +64,14 @@ public class Staff {
 
             // Now deal with what can go wrong if the file is bad
             } catch (ClassNotFoundException ex) {
+                System.out.println("Could not find class \"" 
+                        + className + "\"");
+                return;
+            } catch (NoSuchMethodException ex) {
+                System.out.println("Could not find constructor \"" 
+                        + className + "\"");
+                return;
+            } catch (InvocationTargetException ex) {
                 System.out.println("Could not find class \"" 
                         + className + "\"");
                 return;

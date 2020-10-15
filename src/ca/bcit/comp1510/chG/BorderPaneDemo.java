@@ -53,8 +53,10 @@ public class BorderPaneDemo extends Application {
         Label colorLabel = new Label("Frame:");
         ColorPicker colorPicker = new ColorPicker(Color.ORANGE);
 
-        VBox colorControls = new VBox(sepiaButton, monoButton, colorButton, sep, colorLabel, colorPicker);
-        colorControls.setStyle("-fx-padding: 20px 10px; " + "-fx-background-color: skyblue");
+        VBox colorControls = new VBox(sepiaButton, monoButton, colorButton,
+                sep, colorLabel, colorPicker);
+        colorControls.setStyle("-fx-padding: 20px 10px; "
+                + "-fx-background-color: skyblue");
         final int spacing = 10;
         colorControls.setSpacing(spacing);
 

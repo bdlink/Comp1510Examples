@@ -30,6 +30,7 @@ public class Multiples {
 
         System.out.print("Enter an upper limit: ");
         limit = scan.nextInt();
+        scan.close();
 
         System.out.println();
         System.out.println("The multiples of " + value + " between "
@@ -44,8 +45,6 @@ public class Multiples {
                 System.out.println();
             }
         }
-        
-        scan.close();
     }
 }
 

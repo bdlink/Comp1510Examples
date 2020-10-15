@@ -4,7 +4,7 @@ package ca.bcit.comp1510.ch10;
  * Represents a staff member that works as a volunteer.
  *
  * @author Lewis & Loftus 9e
- * @author BCIT
+ * @author Bruce Link
  * @version 2017
  */
 public class Volunteer extends StaffMember {

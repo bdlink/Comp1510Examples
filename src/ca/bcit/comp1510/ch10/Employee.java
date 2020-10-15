@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Represents a general paid employee.
  *
  * @author Lewis & Loftus 9e
- * @author BCIT
+ * @author Bruce Link
  * @version 2017
  */
 public class Employee extends StaffMember {

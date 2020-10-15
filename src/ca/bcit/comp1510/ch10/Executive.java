@@ -4,7 +4,7 @@ package ca.bcit.comp1510.ch10;
  * Represents an executive staff member, who can earn a bonus.
  *
  * @author Lewis & Loftus 9e
- * @author BCIT
+ * @author Bruce Link
  * @version 2017
  */
 public class Executive extends Employee {
