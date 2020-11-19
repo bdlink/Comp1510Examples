@@ -37,7 +37,7 @@ public class PigLatin {
             System.out.print("Translate another sentence (y/n)? ");
             another = scan.nextLine();
         } while (another.equalsIgnoreCase("y"));
-        
+        System.out.println("Bye");
         scan.close();
     }
 }
