@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
  * @author blink
  * @version 1
  */
-public class RationalTest {
+public class TestRational {
     /** first test value. */
     private Rational r1;
     
@@ -23,10 +23,10 @@ public class RationalTest {
     /** initialize r1, r2 for all tests. */
     @BeforeEach
     public void setUp() {
-        final int num1 = 6;
-        final int den1 = 8;
-        final int num2 = 1;
-        final int den2 = 3;
+        int num1 = 6;
+        int den1 = 8;
+        int num2 = 1;
+        int den2 = 3;
         r1 = new Rational(num1, den1);
         r2 = new Rational(num2, den2);
     }
