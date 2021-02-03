@@ -10,7 +10,7 @@ package ca.bcit.comp1510.ch04;
  */
 public class Die {
     /** Maximum face value. */
-    private static final int MAX = 6;
+    public static final int MAX = 6;
 
     /** Current value showing on the die. */
     private int faceValue;

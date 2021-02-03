@@ -18,6 +18,8 @@ public class RollingDice {
         Die die1;
         Die die2;
         int sum;
+        
+        System.out.println("Number of sides on dice is " + Die.MAX);
 
         die1 = new Die();
         die2 = new Die();
