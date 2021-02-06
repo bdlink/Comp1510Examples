@@ -162,6 +162,10 @@ public class Complex {
         return new Complex(re / op2, im);
     }
     
+    public Complex sqrt(Complex z) {
+        return polarComplex(Math.sqrt(z.abs()), z.arg() / 2.0);
+    }
+    
     /**
      * Determines if this complex number is equal to the one passed as a
      * parameter.
