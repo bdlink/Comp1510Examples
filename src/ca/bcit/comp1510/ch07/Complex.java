@@ -162,8 +162,12 @@ public class Complex {
         return new Complex(re / op2, im);
     }
     
-    public Complex sqrt(Complex z) {
-        return polarComplex(Math.sqrt(z.abs()), z.arg() / 2.0);
+    /**
+     * Return complex square root of this.
+     * @return the square root
+     */
+    public Complex sqrt() {
+        return polarComplex(Math.sqrt(this.abs()), this.arg() / 2.0);
     }
     
     /**
