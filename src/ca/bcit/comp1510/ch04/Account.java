@@ -80,6 +80,22 @@ public class Account {
     }
 
     /**
+     * Returns account number.
+     * @return the acctNumber
+     */
+    public long getAcctNumber() {
+        return acctNumber;
+    }
+
+    /**
+     * Returns name of account owner.
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
      * Returns a one-line description of the account as a String.
      * 
      * @return toString description containing account number, owner name,
