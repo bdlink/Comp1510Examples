@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class TestAccount {
+class AccountTest {
     final Account acct1 = new Account("Grace Hopper", 72354, 102.56);
     final Account acct2 = new Account("Edsger Dijkstra", 69713, 40.00);
     final Account acct3 = new Account("James Gosling", 93757, 759.32);

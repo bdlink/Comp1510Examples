@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.CsvSource;
  * @author blink
  * @version 1
  */
-public class TestParameterizedRational {
+public class ParameterizedRationalTest {
 
     /** 
      * Test Rational creation.

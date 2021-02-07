@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-public class TestArrayPolynomialsConstructors {
+public class ArrayPolynomialsConstructorsTest {
 
     @Test
     void testConstructor1() {

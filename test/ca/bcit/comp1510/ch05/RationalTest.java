@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
  * @author blink
  * @version 1
  */
-public class TestRational {
+public class RationalTest {
     /** first test value. */
     private Rational r1;
     

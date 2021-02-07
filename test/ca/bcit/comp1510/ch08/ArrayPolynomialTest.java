@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 //import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-class TestArrayPolynomial {
+class ArrayPolynomialTest {
     /** ZERO is polynomial with one zero coefficient. Has degree -1. 
      * Should be the same as calling new ArrayPolynomial() */
     private Polynomial ZERO = new ArrayPolynomial(0);
