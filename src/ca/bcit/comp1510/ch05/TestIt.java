@@ -8,7 +8,7 @@ import java.util.List;
  * @version 1
  *
  */
-public class ToTest {
+public class TestIt {
     
     /** 
      * Return the largest value in the parameters.

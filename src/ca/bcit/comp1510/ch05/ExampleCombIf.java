@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author blink
  * @version 1
  */
-public class TestCombIf {
+public class ExampleCombIf {
 
     /** Base of numbers to be analyzed. */
     static final int BASE = 10;

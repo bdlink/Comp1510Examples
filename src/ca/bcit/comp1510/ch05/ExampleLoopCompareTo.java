@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author Link
  * @version 1
  */
-public class TestCompareTo {
+public class ExampleLoopCompareTo {
     /** indication of when to stop. */
     private static final String SENTINAL = "---END---";
 
