@@ -88,6 +88,7 @@ public class ComplexTester {
     private static void testFunctions(Complex z1, Complex z2) {
         final double piDiv4 = Math.PI / 4.0;
         final Complex minusOne = Complex.ZERO.subtract(Complex.ONE);
+        final Complex πi = new Complex(0.0, Math.PI);
         System.out.println("abs(" + z1 + ") = " + z1.abs()
                + "\nabs(" + Complex.I + ") = " + Complex.I.abs()
                + "\narg(" + z2 + ") = " + z2.arg() 
@@ -97,6 +98,16 @@ public class ComplexTester {
                + "\narg(" + minusOne + ") = " + minusOne.arg() 
                + "\npi / 2 = " + Math.PI
                + "\nconjugate(" + z1 + ") = " + z1.conjugate()
+               + "\nexp(" + z1 + ") = " + z1.exp()
+               + "\nlog(" + z1 + ") = " + z1.log()
+               + "\nexp(log(" + z1 + ")) = " + z1.log().exp()
+               + "\nlog(exp(" + z1 + ")) = " + z1.exp().log()
+               + "\nexp(" + z2 + ") = " + z2.exp()
+               + "\nlog(" + z2 + ") = " + z2.log()
+               + "\nexp(log(" + z2 + ")) = " + z2.log().exp()
+               + "\nlog(exp(" + z2 + ")) = " + z2.exp().log()
+               + "\nexp(πi) + 1 = " + πi.exp().add(Complex.ONE)
+
         );
     }
 }

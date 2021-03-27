@@ -54,7 +54,7 @@ public class Complex {
     
     /**
      * Returns argument of this, the angle with respect to 
-     * the positive real axis.
+     * the positive real axis in range -π to π.
      * @return the argument, in radians
      */
     public double arg() {
@@ -168,6 +168,25 @@ public class Complex {
      */
     public Complex sqrt() {
         return polarComplex(Math.sqrt(this.abs()), this.arg() / 2.0);
+    }
+    
+    /**
+     * Return the exponential e to the power of this, 
+     * where e is Euler's constant Math.E.
+     * @return e to the power this
+     */
+    public Complex exp() {
+        return new Complex(Math.exp(re) * Math.cos(im), 
+                           Math.exp(re) * Math.sin(im));
+    }
+    
+    /**
+     * Return the natural logarithm of this, 
+     * with argument in range -π to π.  
+     * @return e to the power this
+     */
+    public Complex log() {
+        return new Complex(Math.log(abs()), arg());
     }
     
     /**
