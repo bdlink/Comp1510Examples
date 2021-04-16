@@ -20,10 +20,20 @@ public class VariableParameters {
 
         Family camden = new Family("Stephen", "Annie", "Matt",
                 "Mary", "Simon", "Lucy", "Ruthie", "Sam", "David");
+        
+        String[] members = {"Rabten", "Drolma", "Tenzin", "Yeshe"};        
+        Family gyaltsen = new Family(members);
+        
+        //check whether implementation of Family allows access to internals
+        //with an alias
+        members[1] = "Yonten";
 
         System.out.println(lewis);
         System.out.println();
         System.out.println(camden);
+        System.out.println();
+        System.out.println(gyaltsen);
+        
     }
 }
 

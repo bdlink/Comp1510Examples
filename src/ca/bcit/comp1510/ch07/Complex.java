@@ -159,7 +159,7 @@ public class Complex {
         if (op2 == 0.0) {
             throw new IllegalArgumentException("Tried to divide by 0.0");
         }
-        return new Complex(re / op2, im);
+        return new Complex(re / op2, im / op2);
     }
     
     /**
@@ -203,9 +203,9 @@ public class Complex {
     }
 
     /**
-     * Satisfies requirement that for all Complex z1, z2: if
-     * z1.equals(z2) then z1.hashCode() == z2.hashCode(). if !z1.equals(z2) then
-     * z1.hashCode() != z2.hashCode() if possible.
+     * Satisfies requirement that for all Complex z1, z2: 
+     * if z1.equals(z2) then z1.hashCode() == z2.hashCode(). 
+     * if possible, if !z1.equals(z2) then z1.hashCode() != z2.hashCode().
      * 
      * @return hash code for this
      */
