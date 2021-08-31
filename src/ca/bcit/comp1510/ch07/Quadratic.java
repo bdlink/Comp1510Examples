@@ -1,8 +1,6 @@
 package ca.bcit.comp1510.ch07;
 
 import java.util.Scanner;
-import static java.lang.Math.pow;
-import static java.lang.Math.sqrt;
 
 /**
  *  Demonstrates the use of the Math class to perform a calculation
