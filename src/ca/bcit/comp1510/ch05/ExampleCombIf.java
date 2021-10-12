@@ -3,7 +3,7 @@ package ca.bcit.comp1510.ch05;
 import java.util.Scanner;
 
 /**
- * Demonstrates Checkstyle's handling of else-if comb structure.
+ * Demonstrates proper indentation of else-if comb structure.
  * 
  * @author blink
  * @version 1

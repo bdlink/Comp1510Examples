@@ -1,6 +1,8 @@
 package ca.bcit.comp1510.ch05;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Provide code for testing.
@@ -17,7 +19,7 @@ public class TestIt {
      * @param c third number
      * @return largest of three numbers
      */
-    public int largest(int a, int b, int c) {
+    public static int largest(int a, int b, int c) {
         int max = a;
         if (b > max) {
             max = b;
@@ -33,7 +35,7 @@ public class TestIt {
      * @param a List of integers
      * @return largest of numbers in List
      */
-    public int largest(List<Integer> a) {
+    public static int largest(List<Integer> a) {
         int max = a.get(0);
         int i = 1;
         while (i < a.size()) {
@@ -44,6 +46,22 @@ public class TestIt {
         }
         
         return max;
+    }
+    
+    /** read a list of integers and find the largest.
+     * 
+     * @param args unused
+     */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        List<Integer> list = new ArrayList<Integer>();
+
+        System.out.println("Enter a list of integers, " 
+                +  "terminated by \"done\"");
+        while (scan.hasNextInt()) {
+            list.add(scan.nextInt());
+        }
+        System.out.println("largest = " + largest(list));
     }
 
 }
