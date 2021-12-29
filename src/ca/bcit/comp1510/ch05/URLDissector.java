@@ -34,7 +34,7 @@ public class URLDissector {
             System.out.println("URL: " + url);
 
             urlScan = new Scanner(url);
-            urlScan.useDelimiter("[/]");
+            urlScan.useDelimiter("[/?]");
 
             // Prints each part of the URL
             while (urlScan.hasNext()) {
