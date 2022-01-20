@@ -126,6 +126,9 @@
   </module>
   <module name="LineLength"/>
   <module name="BeforeExecutionExclusionFileFilter">
+    <property name="fileNamePattern" value="\.DS_Store"/>
+  </module>
+  <module name="BeforeExecutionExclusionFileFilter">
     <property name="fileNamePattern" value=".*\.jpg"/>
   </module>
   <module name="BeforeExecutionExclusionFileFilter">
