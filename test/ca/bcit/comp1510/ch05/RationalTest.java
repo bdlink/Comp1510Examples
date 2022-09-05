@@ -85,7 +85,7 @@ public class RationalTest {
         assertTrue(r2.add(r1).isLike(answer));
     }
 
-    /** Test subrtact. */
+    /** Test subtract. */
     @Test
     public void testSubtract() {
         final Rational answer = new Rational(5, 12); 

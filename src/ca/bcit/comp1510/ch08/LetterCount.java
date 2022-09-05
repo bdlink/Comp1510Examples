@@ -52,7 +52,7 @@ public class LetterCount {
         for (int letter = 0; letter < upper.length; letter++) {
             System.out.print((char) (letter + 'A'));
             System.out.print(": " + upper[letter]);
-            System.out.print("\t\t" + (char) (letter + 'a'));
+            System.out.print("\t\t" +  (char) (letter + 'a'));
             System.out.println(": " + lower[letter]);
         }
 
