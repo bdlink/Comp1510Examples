@@ -26,7 +26,12 @@ public class RandomNumbers {
         Random generator = new Random();
         int num1;
         float num2;
-
+        
+        System.out.println("""
+                ***********************************************
+                Example of random numbers from java.util.Random
+                ***********************************************
+                """);
         num1 = generator.nextInt();
         System.out.println("A random integer: " + num1);
 
