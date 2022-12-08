@@ -12,11 +12,11 @@ import java.util.ArrayList;
 public class Beatles {
 
     /**
-     * Stores and midifiers a list of band members.
+     * Stores and modifies a list of band members.
      * @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
-        ArrayList<String> band = new ArrayList<String>();
+        ArrayList<String> band = new ArrayList<>();
 
         band.add("Paul");
         band.add("Pete");

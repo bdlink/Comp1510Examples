@@ -17,7 +17,7 @@ public class GratefulDead {
      * @param args Unused
      */
     public static void main(String[] args) {
-        List<String> band = new ArrayList<String>();
+        List<String> band = new ArrayList<>();
 
         band.add("Jerry Garcia");
         band.add("Bob Weir");

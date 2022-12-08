@@ -15,7 +15,7 @@ public class TwoDArray {
     private static final int COLUMNS = 7;
     
     /** Multiplier to use to go to next row. */
-    private static final int MULTIPLIER = 10;
+    private static final int MULTIPLIER = 7;
     
     /**
      * Creates a 2D array of integers and fills it with increasing integer

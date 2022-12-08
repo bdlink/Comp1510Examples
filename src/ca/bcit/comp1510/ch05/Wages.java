@@ -20,7 +20,7 @@ public class Wages {
     public static void main(String[] args) {
         
         // regular pay rate
-        final double rate = 8.25;
+        final double rate = 12.25;
         
         final double overtimeRate = rate * 1.5;
         
@@ -29,7 +29,7 @@ public class Wages {
 
         Scanner scan = new Scanner(System.in);
 
-        double pay = 0.0;
+        double pay;
 
         System.out.print("Enter the number of hours worked: ");
         int hours = scan.nextInt();
