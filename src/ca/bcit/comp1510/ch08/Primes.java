@@ -8,9 +8,9 @@ package ca.bcit.comp1510.ch08;
  * @version 2017
  */
 public class Primes {
-    /** First several prime numbers. */
+    /** Prime numbers <= 60. */
     private static final int[] PRIMES =
-        {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
+        {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59};
 
     /**
      * Stores some prime numbers in an array and prints them.
