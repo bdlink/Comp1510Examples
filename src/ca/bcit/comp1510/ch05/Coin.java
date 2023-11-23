@@ -1,21 +1,25 @@
 package ca.bcit.comp1510.ch05;
 
 /**
- * Represents a two-sided coin that can be flipped.
+ * Represents a two-sided coin that can be flipped.  Modified over class
+ * example to use enum.
  * 
  * @author Lewis & Loftus 9e
+ * @author Bruce Link
  * @author BCIT
- * @version 2017
+ * @version 2023
  */
 public class Coin {
-    /** Internal representation of coin showing heads. */
-    public static final int HEADS = 0;
-
-    /** Internal representation of coin showing tails. */
-    public static final int TAILS = 1;
+    /** Enumeration type representing sides of a coin. */
+    public enum CoinFace {
+        /** the side of a coin considered tails. */
+        Tails,
+        /** the side of a coin considered heads. */
+        Heads
+    }
 
     /** Coin's current face showing. */
-    private int face;
+    private CoinFace face;
 
     /**
      * Constructs a Coin object and flips it to give it a starting value.
@@ -28,7 +32,29 @@ public class Coin {
      * Flips this Coin by randomly choosing a face value.
      */
     public void flip() {
-        face = (int) (Math.random() * 2);
+        final double half = 0.5;
+        if (Math.random() < half) {
+            face = CoinFace.Heads;
+        } else {
+            face = CoinFace.Tails;
+        }
+    }
+    
+    /**
+     * returns side of coin as CoinFace type.
+     * @return current showing face of this coin.
+     */
+    public CoinFace getFace() {
+        return face;
+    }
+    
+    /**
+     * set the coin face explicitly.  No required check on values as enum 
+     * CoinFace allows no illegal values to be passed.
+     * @param newFace the new face to show.
+     */
+    public void setFace(CoinFace newFace) {
+        face = newFace;
     }
 
     /**
@@ -36,7 +62,7 @@ public class Coin {
      * @return true if current face is heads, else false.
      */
     public boolean isHeads() {
-        return face == HEADS;
+        return face == CoinFace.Heads;
     }
 
     /**
@@ -44,15 +70,7 @@ public class Coin {
      * @return toString description
      */
     public String toString() {
-        String faceName;
-
-        if (face == HEADS) {
-            faceName = "Heads";
-        } else {
-            faceName = "Tails";
-        }
-        
-        return faceName;
+        return face.name();      
     }
 }
 
