@@ -36,7 +36,7 @@ public class PhoneList2 {
         }
         System.out.println();
 
-        Sorting.selectionSort(friends);
+        Sorting.insertionSort(friends);
 
         test = new Contact("Mario", "Guzman", "");
         found = Searching.binarySearch(friends, test);

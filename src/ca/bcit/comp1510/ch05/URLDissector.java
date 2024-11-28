@@ -2,7 +2,7 @@ package ca.bcit.comp1510.ch05;
 
 import java.util.Scanner;
 import java.io.File;
-import java.io.IOException;
+import java.io.FileNotFoundException;
 
 /**
  * Demonstrates the use of Scanner to read file input and parse it using
@@ -19,7 +19,7 @@ public class URLDissector {
      * @param args command line arguments (unused)
      * @throws IOException if there is an error reading the file
      */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws FileNotFoundException {
         String url;
         Scanner fileScan;
         Scanner urlScan;
@@ -34,7 +34,7 @@ public class URLDissector {
             System.out.println("URL: " + url);
 
             urlScan = new Scanner(url);
-            urlScan.useDelimiter("[/?]");
+            urlScan.useDelimiter("[/?&]");
 
             // Prints each part of the URL
             while (urlScan.hasNext()) {

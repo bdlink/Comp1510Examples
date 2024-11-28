@@ -1,6 +1,7 @@
 package ca.bcit.comp1510.ch03;
 
 import java.util.Random;
+import java.util.random.RandomGenerator;
 
 /**
  * Demonstrates the creation of pseudo-random numbers using the Random class.
@@ -23,7 +24,9 @@ public class RandomNumbers {
         final int twenty = 20;
         final int dieMax = 6;
 
-        Random generator = new Random();
+        //RandomGenerator is a type that includes the Random class.  Will learn 
+        //more about this in chapter 7, interfaces.
+        RandomGenerator generator = new Random();
         int num1;
         float num2;
         

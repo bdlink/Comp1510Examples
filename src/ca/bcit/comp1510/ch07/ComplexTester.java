@@ -96,7 +96,7 @@ public class ComplexTester {
                + "\narg(" + Complex.I + ") = " + Complex.I.arg() 
                + "\npi / 2 = " + Math.PI / 2.0
                + "\narg(" + minusOne + ") = " + minusOne.arg() 
-               + "\npi / 2 = " + Math.PI
+               + "\npi = " + Math.PI
                + "\nconjugate(" + z1 + ") = " + z1.conjugate()
                + "\nexp(" + z1 + ") = " + z1.exp()
                + "\nlog(" + z1 + ") = " + z1.log()

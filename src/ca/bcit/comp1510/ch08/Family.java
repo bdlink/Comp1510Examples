@@ -9,7 +9,7 @@ package ca.bcit.comp1510.ch08;
  */
 public class Family {
     /** Names of family members. */
-    private String[] members;
+    private final String[] members;
 
     /**
      * Constructs a Family object by storying the (possibly multiple)
@@ -18,7 +18,7 @@ public class Family {
      */
     public Family(String... names) {
         members = names;
-        //make copy of names to avoid aliasing with external array
+//make copy of names to avoid aliasing with external array
 //        members = new String[names.length];
 //        for (int i = 0; i < names.length; i++) {
 //            members[i] = names[i];
