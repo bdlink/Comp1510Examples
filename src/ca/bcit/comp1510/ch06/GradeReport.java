@@ -34,24 +34,20 @@ public class GradeReport {
         System.out.print("That grade is ");
 
         switch (category) {
-            case perfect:
+            case perfect ->
                 System.out.println("a perfect score. Well done.");
-                break;
-            case perfect - 1:
+            case perfect - 1 ->
                 System.out.println("well above average. Excellent.");
-                break;
-            case average + 1:
+            case average + 1 ->
                 System.out.println("above average. Nice job.");
-                break;
-            case average:
+            case average ->
                 System.out.println("average.");
-                break;
-            case average - 1:
+            case average - 1 -> {
                 System.out.println("below average. You should see the");
                 System.out.println("instructor to clarify the material "
                     + "presented in class.");
-                break;
-            default:
+            }
+            default ->
                 System.out.println("not passing.");
         }
         
