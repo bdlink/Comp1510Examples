@@ -63,9 +63,9 @@ public class Contact implements Comparable<Contact> {
      * @return true if they are the same, else false
      */
     public boolean equals(Object other) {
-        return (other instanceof Contact
-                && lastName.equals(((Contact) other).getLastName())
-                && firstName.equals(((Contact) other).getFirstName()));
+        return other instanceof Contact c
+                && lastName.equals(c.getLastName())
+                && firstName.equals(c.getFirstName());
     }
 
     /**

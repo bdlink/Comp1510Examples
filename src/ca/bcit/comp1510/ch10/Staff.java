@@ -55,11 +55,11 @@ public class Staff {
 
                 // Add to list, add bonus and hours as in text example
                 staffList.add(nextStaff);
-                if (nextStaff instanceof Executive) {
-                    ((Executive) nextStaff).awardBonus(executiveBonus);
+                if (nextStaff instanceof Executive e) {
+                    e.awardBonus(executiveBonus);
                 }
-                if (nextStaff instanceof Hourly) {
-                    ((Hourly) nextStaff).addHours(hourlyHours);
+                if (nextStaff instanceof Hourly h) {
+                    h.addHours(hourlyHours);
                 }
 
             // Now deal with what can go wrong if the file is bad

@@ -197,9 +197,9 @@ public class Complex {
      * @return true if this is equal to op2 numerically
      */
     public boolean equals(Object op2) {
-        return (op2 instanceof Complex
-                && re == ((Complex) op2).re
-                && im == ((Complex) op2).im);
+        return (op2 instanceof Complex c
+                && re == c.re
+                && im == c.im);
     }
 
     /**

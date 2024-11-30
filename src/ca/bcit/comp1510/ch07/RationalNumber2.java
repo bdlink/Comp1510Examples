@@ -144,9 +144,9 @@ public class RationalNumber2 {
      * @return true if this is equal to op2 numerically
      */
     public boolean equals(Object op2) {
-        return (op2 instanceof RationalNumber2
-                && numerator == ((RationalNumber2) op2).getNumerator()
-                && denominator == ((RationalNumber2) op2).getDenominator());
+        return op2 instanceof RationalNumber2 r
+                && numerator == r.getNumerator()
+                && denominator == r.getDenominator();
     }
 
     /**
