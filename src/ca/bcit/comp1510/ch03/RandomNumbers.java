@@ -1,6 +1,5 @@
 package ca.bcit.comp1510.ch03;
 
-import java.util.Random;
 import java.util.random.RandomGenerator;
 
 /**
@@ -26,7 +25,9 @@ public class RandomNumbers {
 
         //RandomGenerator is a type that includes the Random class.  Will learn 
         //more about this in chapter 7, interfaces.
-        RandomGenerator generator = new Random();
+        //getDefault returns a random number generator with better statistics 
+        //than the Random class.
+        RandomGenerator generator = RandomGenerator.getDefault();
         int num1;
         float num2;
         
