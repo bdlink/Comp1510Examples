@@ -14,12 +14,12 @@ import org.junit.jupiter.api.Test;
  * @author blink
  * @version 1
  */
-public class RationalNumber2Test {
+public class RationalTest {
     /** first test value. */
-    private RationalNumber2 r1;
+    private Rational r1;
     
     /** second test value/. */
-    private RationalNumber2 r2;
+    private Rational r2;
     
     /** initialize r1, r2 for all tests. */
     @BeforeEach
@@ -28,8 +28,8 @@ public class RationalNumber2Test {
         int den1 = 8;
         int num2 = 1;
         int den2 = 3;
-        r1 = new RationalNumber2(num1, den1);
-        r2 = new RationalNumber2(num2, den2);
+        r1 = new Rational(num1, den1);
+        r2 = new Rational(num2, den2);
     }
     
     /**
@@ -37,11 +37,11 @@ public class RationalNumber2Test {
      */
     @Test
     public void testCreation() {
-        RationalNumber2 r = new RationalNumber2(1, 1);
-        assertEquals(1, r.getNumerator());
-        assertEquals(1, r.getDenominator());
+        Rational r = new Rational(1, 1);
+        assertEquals(1, r.numerator());
+        assertEquals(1, r.denominator());
         assertThrows(IllegalArgumentException.class,
-                () -> {new RationalNumber2(2, 0);} );
+                () -> {new Rational(2, 0);} );
 
     }
     
@@ -54,15 +54,15 @@ public class RationalNumber2Test {
         final int den = 4;
         final int numOut = 3;
         final int denOut = 2;
-        RationalNumber2 r = new RationalNumber2(num, den);
-        assertEquals(numOut, r.getNumerator(), "Numerator wrong");
-        assertEquals(denOut, r.getDenominator(), "Denominator wrong");
+        Rational r = new Rational(num, den);
+        assertEquals(numOut, r.numerator(), "Numerator wrong");
+        assertEquals(denOut, r.denominator(), "Denominator wrong");
     }
     
     /** Test equals. */
     @Test
     public void testSame() {
-        final RationalNumber2 reduced = new RationalNumber2(3, 4);
+        final Rational reduced = new Rational(3, 4);
         assertFalse(r1.equals(r2), "Falsely equal");
         assertTrue(r1.equals(reduced), "Falsly different");
     }
@@ -70,8 +70,8 @@ public class RationalNumber2Test {
     /** Test reciprocal. */
     @Test
     public void testReciprocal() {
-        final RationalNumber2 recipR1 = new RationalNumber2(4, 3);
-        final RationalNumber2 recipR2 = new RationalNumber2(3, 1);
+        final Rational recipR1 = new Rational(4, 3);
+        final Rational recipR2 = new Rational(3, 1);
 
         assertTrue(r1.reciprocal().equals(recipR1), "Wrong reciprocal");
         assertTrue(r2.reciprocal().equals(recipR2), "Wrong reciprocal");
@@ -80,7 +80,7 @@ public class RationalNumber2Test {
     /** Test add. */
     @Test
     public void testAdd() {
-        final RationalNumber2 answer = new RationalNumber2(13, 12);
+        final Rational answer = new Rational(13, 12);
 
         assertTrue(r1.add(r2).equals(answer));
         assertTrue(r2.add(r1).equals(answer));
@@ -89,9 +89,9 @@ public class RationalNumber2Test {
     /** Test subrtact. */
     @Test
     public void testSubtract() {
-        final RationalNumber2 answer = new RationalNumber2(5, 12); 
+        final Rational answer = new Rational(5, 12); 
         assertTrue(r1.subtract(r2).equals(answer));
-        final RationalNumber2 answer2 = new RationalNumber2(-5, 12); 
+        final Rational answer2 = new Rational(-5, 12); 
         assertTrue(r2.subtract(r1).equals(answer2));
         
     }
@@ -99,7 +99,7 @@ public class RationalNumber2Test {
     /** Test multiply. */
     @Test
     public void testMultiply() {
-        final RationalNumber2 answer = new RationalNumber2(1, 4); 
+        final Rational answer = new Rational(1, 4); 
         assertTrue(r1.multiply(r2).equals(answer));
         assertTrue(r2.multiply(r1).equals(answer));
     }
@@ -107,10 +107,10 @@ public class RationalNumber2Test {
     /** Test divide. */
     @Test
     public void testDivide() {
-        final RationalNumber2 answer = new RationalNumber2(9, 4); 
+        final Rational answer = new Rational(9, 4); 
         assertTrue(r1.divide(r2).equals(answer));
         
-        final RationalNumber2 answer2 = new RationalNumber2(4, 9);
+        final Rational answer2 = new Rational(4, 9);
         assertTrue(r2.divide(r1).equals(answer2));
         
     }
@@ -118,10 +118,10 @@ public class RationalNumber2Test {
     /** test toString. */
     @Test
     public void testToString() {
-        final RationalNumber2 test1 = new RationalNumber2(0, 2);
-        final RationalNumber2 test2 = new RationalNumber2(23, 1);
-        final RationalNumber2 test3 = new RationalNumber2(46, 2);
-        final RationalNumber2 test4 = new RationalNumber2(5, 7);
+        final Rational test1 = new Rational(0, 2);
+        final Rational test2 = new Rational(23, 1);
+        final Rational test3 = new Rational(46, 2);
+        final Rational test4 = new Rational(5, 7);
         
         assertEquals("0", test1.toString(), "should be 0");
         assertEquals("23", test2.toString(), "should be 23");

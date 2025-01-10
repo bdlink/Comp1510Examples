@@ -27,8 +27,8 @@ public class ParameterizedRationalTest {
     public void creationTest(int expectedOne, int expectedTwo, int valueOne,
             int valueTwo) {
         Rational r = new Rational(valueOne, valueTwo);
-        assertEquals(expectedOne, r.getNumerator());
-        assertEquals(expectedTwo, r.getDenominator());
+        assertEquals(expectedOne, r.numerator());
+        assertEquals(expectedTwo, r.denominator());
     } 
 }
 

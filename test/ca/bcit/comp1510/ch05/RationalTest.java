@@ -37,11 +37,11 @@ public class RationalTest {
     @Test
     public void testCreation() {
         Rational r = new Rational(1, 1);
-        assertEquals(1, r.getNumerator());
-        assertEquals(1, r.getDenominator());
+        assertEquals(1, r.numerator());
+        assertEquals(1, r.denominator());
         r = new Rational(1, 0);
-        assertEquals(1, r.getNumerator());
-        assertEquals(1, r.getDenominator());
+        assertEquals(1, r.numerator());
+        assertEquals(1, r.denominator());
     }
     
     /**
@@ -54,16 +54,16 @@ public class RationalTest {
         final int numOut = 3;
         final int denOut = 2;
         Rational r = new Rational(num, den);
-        assertEquals(numOut, r.getNumerator(), "Numerator wrong");
-        assertEquals(denOut, r.getDenominator(), "Denominator wrong");
+        assertEquals(numOut, r.numerator(), "Numerator wrong");
+        assertEquals(denOut, r.denominator(), "Denominator wrong");
     }
     
     /** Test isLike. */
     @Test
     public void testSame() {
         final Rational reduced = new Rational(3, 4);
-        assertFalse(r1.isLike(r2), "Falsely equal");
-        assertTrue(r1.isLike(reduced), "Falsly different");
+        assertFalse(r1.equals(r2), "Falsely equal");
+        assertTrue(r1.equals(reduced), "Falsly different");
     }
 
     /** Test reciprocal. */
@@ -72,8 +72,8 @@ public class RationalTest {
         final Rational recipR1 = new Rational(4, 3);
         final Rational recipR2 = new Rational(3, 1);
 
-        assertTrue(r1.reciprocal().isLike(recipR1), "Wrong reciprocal");
-        assertTrue(r2.reciprocal().isLike(recipR2), "Wrong reciprocal");
+        assertTrue(r1.reciprocal().equals(recipR1), "Wrong reciprocal");
+        assertTrue(r2.reciprocal().equals(recipR2), "Wrong reciprocal");
     }
 
     /** Test add. */
@@ -81,17 +81,17 @@ public class RationalTest {
     public void testAdd() {
         final Rational answer = new Rational(13, 12);
 
-        assertTrue(r1.add(r2).isLike(answer));
-        assertTrue(r2.add(r1).isLike(answer));
+        assertTrue(r1.add(r2).equals(answer));
+        assertTrue(r2.add(r1).equals(answer));
     }
 
     /** Test subtract. */
     @Test
     public void testSubtract() {
         final Rational answer = new Rational(5, 12); 
-        assertTrue(r1.subtract(r2).isLike(answer));
+        assertTrue(r1.subtract(r2).equals(answer));
         final Rational answer2 = new Rational(-5, 12); 
-        assertTrue(r2.subtract(r1).isLike(answer2));
+        assertTrue(r2.subtract(r1).equals(answer2));
         
     }
 
@@ -99,18 +99,18 @@ public class RationalTest {
     @Test
     public void testMultiply() {
         final Rational answer = new Rational(1, 4); 
-        assertTrue(r1.multiply(r2).isLike(answer));
-        assertTrue(r2.multiply(r1).isLike(answer));
+        assertTrue(r1.multiply(r2).equals(answer));
+        assertTrue(r2.multiply(r1).equals(answer));
     }
 
     /** Test divide. */
     @Test
     public void testDivide() {
         final Rational answer = new Rational(9, 4); 
-        assertTrue(r1.divide(r2).isLike(answer));
+        assertTrue(r1.divide(r2).equals(answer));
         
         final Rational answer2 = new Rational(4, 9);
-        assertTrue(r2.divide(r1).isLike(answer2));
+        assertTrue(r2.divide(r1).equals(answer2));
         
     }
     

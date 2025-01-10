@@ -3,9 +3,11 @@ package ca.bcit.comp1510.ch07;
 /**
  * Immutable Complex number type.
  * @author blink
- * @version 1.0
+ * @version 2025
+ * @param re Real part of number.
+ * @param im Imaginary part of number.
  */
-public class Complex {
+public record Complex(double re, double im) {
     
     /** Imaginary number I. */
     public static final Complex I = new Complex(0, 1);
@@ -15,23 +17,7 @@ public class Complex {
     
     /** Complex number 1. */
     public static final Complex ONE = new Complex(1, 0);
-    
-    /** Real part of number. */
-    public final double re;
-    
-    /** Imaginary part of number. */
-    public final double im;
-    
-    /**
-     * Constructs a Complex object.
-     * @param real the real part of the new number.
-     * @param imag the imaginary part of the new number.
-     */
-    public Complex(double real, double imag) {
-        re = real;
-        im = imag;
-    }
-    
+            
     /** 
      * Factory method for complex number in polar form.
      * @param radius magnitude of number
@@ -49,7 +35,7 @@ public class Complex {
      * @return the absolute value
      */
     public double abs() {
-        return Math.sqrt(re * re + im * im);
+        return Math.hypot(re, im);
     }
     
     /**
@@ -187,30 +173,6 @@ public class Complex {
      */
     public Complex log() {
         return new Complex(Math.log(abs()), arg());
-    }
-    
-    /**
-     * Determines if this complex number is equal to the one passed as a
-     * parameter.
-     * 
-     * @param op2 The value to compare to this
-     * @return true if this is equal to op2 numerically
-     */
-    public boolean equals(Object op2) {
-        return (op2 instanceof Complex c
-                && re == c.re
-                && im == c.im);
-    }
-
-    /**
-     * Satisfies requirement that for all Complex z1, z2: 
-     * if z1.equals(z2) then z1.hashCode() == z2.hashCode(). 
-     * if possible, if !z1.equals(z2) then z1.hashCode() != z2.hashCode().
-     * 
-     * @return hash code for this
-     */
-    public int hashCode() {
-        return Double.hashCode(re) ^ Double.hashCode(im);
     }
     
     /**
