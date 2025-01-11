@@ -11,7 +11,7 @@ package ca.bcit.comp1510.ch04;
  */
 public record Point(double x, double y) {
     
-    /** origin of Catresian plane. **/
+    /** origin of Cartesian plane. **/
     public static final Point ORIGIN = new Point(0, 0);
 
     /**
