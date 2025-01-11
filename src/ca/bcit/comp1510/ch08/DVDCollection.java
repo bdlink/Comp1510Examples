@@ -65,7 +65,7 @@ public class DVDCollection {
             increaseSize();
         }
         collection[count] = dvd;
-        totalCost += dvd.getCost();
+        totalCost += dvd.cost();
         count++;
     }
 

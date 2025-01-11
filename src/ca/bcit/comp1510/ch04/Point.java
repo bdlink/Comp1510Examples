@@ -32,7 +32,7 @@ public record Point(double x, double y) {
     }
     
     /**
-     * Cartesian addition of points using parallagram rule.
+     * Cartesian addition of points using parallelogram rule.
      * @param other the point to add to a given point.
      * @return sum of this point and other point
      */
