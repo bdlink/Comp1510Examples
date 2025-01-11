@@ -8,7 +8,8 @@ package ca.bcit.comp1510.ch07;
  * @author blink
  * @version 2025
  * @param numerator Numerator of rational number in reduced form, holds sign.
- * @param denominator Denominator of rational number in reduced form, positive sign.
+ * @param denominator Denominator of rational number in reduced form, 
+ *     positive sign.
  */
 public record Rational(int numerator, int denominator) {
     /** RationalNumber version of numeric zero. */
@@ -30,14 +31,10 @@ public record Rational(int numerator, int denominator) {
             numerator = numerator * -1;
             denominator = denominator * -1;
         }
-        if (numerator == 0) {
-            denominator = 1;
-        } else {
-            int common = gcd(Math.abs(numerator), denominator);
+        int common = gcd(numerator, denominator);
 
-            numerator /= common;
-            denominator /= common;            
-        }
+        numerator /= common;
+        denominator /= common;            
     }
 
     /**
@@ -135,7 +132,7 @@ public record Rational(int numerator, int denominator) {
     }
 
     /*
-     * Computes and returns the greatest common divisor of the two positive
+     * Computes and returns the greatest common divisor of the two integer
      * parameters. Uses Euclid's algorithm.
      * 
      * @param num1
@@ -145,15 +142,11 @@ public record Rational(int numerator, int denominator) {
      * @return greatest positive integer that divides num1 and num2
      */
     private int gcd(int num1, int num2) {
-        while (num1 != num2) {
-            if (num1 > num2) {
-                num1 = num1 - num2;
-            } else {
-                num2 = num2 - num1;
-            }
+        if (num2 == 0) {
+            return Math.abs(num1);
+        } else {
+            return gcd(num2, num1 % num2);
         }
-
-        return num1;
     }
 }
 

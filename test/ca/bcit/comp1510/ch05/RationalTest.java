@@ -56,11 +56,20 @@ public class RationalTest {
         Rational r = new Rational(num, den);
         assertEquals(numOut, r.numerator(), "Numerator wrong");
         assertEquals(denOut, r.denominator(), "Denominator wrong");
+        r = new Rational(-num, den);
+        assertEquals(-numOut, r.numerator(), "Numerator wrong");
+        assertEquals(denOut, r.denominator(), "Denominator wrong");
+        r = new Rational(num, -den);
+        assertEquals(-numOut, r.numerator(), "Numerator wrong");
+        assertEquals(denOut, r.denominator(), "Denominator wrong");
+        r = new Rational(-num, -den);
+        assertEquals(numOut, r.numerator(), "Numerator wrong");
+        assertEquals(denOut, r.denominator(), "Denominator wrong");
     }
     
-    /** Test isLike. */
+    /** Test equals. */
     @Test
-    public void testSame() {
+    public void testEquals() {
         final Rational reduced = new Rational(3, 4);
         assertFalse(r1.equals(r2), "Falsely equal");
         assertTrue(r1.equals(reduced), "Falsly different");
