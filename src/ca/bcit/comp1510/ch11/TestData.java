@@ -2,7 +2,7 @@ package ca.bcit.comp1510.ch11;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Random;
+import java.util.random.RandomGenerator;
 
 /**
  * Demonstrates the use of a character file output stream.
@@ -34,7 +34,7 @@ public class TestData {
 
         PrintWriter outFile = new PrintWriter(fileName);
 
-        Random rand = new Random();
+        RandomGenerator rand = RandomGenerator.getDefault();
 
         for (int line = 1; line <= max; line++) {
             for (int num = 1; num <= max; num++) {

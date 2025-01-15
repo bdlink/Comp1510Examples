@@ -1,7 +1,7 @@
 package ca.bcit.comp1510.ch08;
 
 import java.util.Arrays;
-import java.util.Random;
+import java.util.random.RandomGenerator;
 
 /**
  * Simulate income evolution with free exchange, finite resources.
@@ -19,7 +19,7 @@ public class IncomeExchangeSimulation {
         final var population = 100;
         final var initialWealth = 1000;
         final var exchange = 50;
-        final Random ran = new Random();
+        RandomGenerator ran = RandomGenerator.getDefault();
         int[] person = new int[population];
         
         for (int i = 0; i < population; i++) {

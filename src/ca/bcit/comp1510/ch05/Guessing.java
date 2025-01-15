@@ -1,6 +1,6 @@
 package ca.bcit.comp1510.ch05;
 
-import java.util.Random;
+import java.util.random.RandomGenerator;
 import java.util.Scanner;
 
 /**
@@ -23,7 +23,7 @@ public class Guessing {
         int guess;
 
         Scanner scan = new Scanner(System.in);
-        Random generator = new Random();
+        RandomGenerator generator = RandomGenerator.getDefault();
 
         answer = generator.nextInt(MAX) + 1;
 
