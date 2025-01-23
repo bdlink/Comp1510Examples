@@ -3,11 +3,12 @@ package ca.bcit.comp1510.ch03;
 import java.util.random.RandomGenerator;
 
 /**
- * Demonstrates the creation of pseudo-random numbers using the Random class.
+ * Demonstrates the creation of pseudo-random numbers using the RandomGenerator
+ *  interface.
  * 
  * @author Lewis & Loftus 9e
- * @author BCIT
- * @version 2017
+ * @author bdlink
+ * @version 2025
  */
 public class RandomNumbers {
 
@@ -23,8 +24,8 @@ public class RandomNumbers {
         final int twenty = 20;
         final int dieMax = 6;
 
-        //RandomGenerator is a type that includes the Random class.  Will learn 
-        //more about this in chapter 7, interfaces.
+        //RandomGenerator is a type that includes the Random class. 
+        //See discussion in chapter 7, interfaces.
         //getDefault returns a random number generator with better statistics 
         //than the Random class.
         RandomGenerator generator = RandomGenerator.getDefault();
