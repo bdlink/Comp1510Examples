@@ -39,7 +39,7 @@ public class MinOfThree {
             }
         } else if (num2 < num3) {
             min = num2;
-        }  else {
+        } else {
             min = num3;
         }
         
