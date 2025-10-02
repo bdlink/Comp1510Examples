@@ -72,7 +72,7 @@ public class RationalTest {
     public void testEquals() {
         final Rational reduced = new Rational(3, 4);
         assertFalse(r1.equals(r2), "Falsely equal");
-        assertTrue(r1.equals(reduced), "Falsly different");
+        assertTrue(r1.equals(reduced), "Falsely different");
     }
 
     /** Test reciprocal. */

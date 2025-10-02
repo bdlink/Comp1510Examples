@@ -29,6 +29,7 @@ public class RandomNumbers {
         //getDefault returns a random number generator with better statistics 
         //than the Random class.
         RandomGenerator generator = RandomGenerator.getDefault();
+        System.out.println(generator);
         int num1;
         float num2;
         

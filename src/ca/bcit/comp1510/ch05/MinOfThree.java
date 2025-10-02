@@ -20,7 +20,7 @@ public class MinOfThree {
         int num1;
         int num2;
         int num3;
-        int min = 0;
+        int min;
 
         Scanner scan = new Scanner(System.in);
 
