@@ -5,7 +5,7 @@
     This configuration file was written by the eclipse-cs plugin configuration editor
 -->
 <!--
-    Checkstyle-Configuration: Comp1510 Checkstyle
+    Checkstyle-Configuration: Comp1510 checkstyle
     Description: none
 -->
 <module name="Checker">
@@ -95,9 +95,7 @@
     <module name="AtclauseOrder"/>
     <module name="SingleLineJavadoc"/>
     <module name="JavadocTagContinuationIndentation"/>
-    <module name="NonEmptyAtclauseDescription">
-      <property name="javadocTokens" value="PARAM_LITERAL,RETURN_LITERAL,THROWS_LITERAL,EXCEPTION_LITERAL,DEPRECATED_LITERAL"/>
-    </module>
+    <module name="NonEmptyAtclauseDescription"/>
     <module name="JavadocMissingWhitespaceAfterAsterisk"/>
     <module name="MethodTypeParameterName"/>
     <module name="InterfaceTypeParameterName"/>
@@ -150,6 +148,6 @@
     <property name="fileNamePattern" value=".*\.inp"/>
   </module>
   <module name="BeforeExecutionExclusionFileFilter">
-    <property name="fileNamePattern" value="Test\.java"/>
+    <property name="fileNamePattern" value="Test\."/>
   </module>
 </module>

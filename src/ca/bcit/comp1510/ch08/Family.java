@@ -19,10 +19,10 @@ public class Family {
     public Family(String... names) {
         members = names;
         //make copy of names to avoid aliasing with external array
-        //members = new String[names.length];
-        //for (int i = 0; i < names.length; i++) {
-        //    members[i] = names[i];
-        //}
+//        members = new String[names.length];
+//        for (int i = 0; i < names.length; i++) {
+//            members[i] = names[i];
+//        }
     }
 
     /**
