@@ -1,7 +1,5 @@
 package ca.bcit.comp1510.ch05;
 
-import static org.junit.Assert.assertEquals;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.params.ParameterizedTest;
